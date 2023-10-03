@@ -78,6 +78,7 @@ const SkillsSection = () => {
           <span>Clean Code</span>
           <span>Responsive Design / Mobile First Approach</span>
           <span>Versionning</span>
+          <span>SCRUM / Agile</span>
           <span>Documenting</span>
           <span>Accessibilty</span>
         </div>
