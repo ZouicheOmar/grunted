@@ -16,8 +16,8 @@ const SkillsSection = () => {
       <p className="formaDJR font-bold text-5xl">Skills</p>
       <p className="basierFont">à mettre en avant</p>
 
-      <div className="w-full  flex flex-wrap md:flex-nowrap justify-center gap-2 md:gap-4 ">
-        <div className="md:w-1/4 w-5/12 border-r-[1px] flex flex-col items-start  gap-2 p-2 border-r-neutral-700 ">
+      <div className="w-full flex flex-wrap md:flex-nowrap justify-center gap-2 md:gap-4 ">
+        <div className="md:w-1/4 w-[45%] sm:w-5/12 border-r-[1px] flex flex-col items-start gap-2 p-2 border-r-neutral-700 ">
           <span className="formaDJR font-bold text-xl">FrontEnd</span>
           <div className="flex flex-col w-full gap-1 justify-start items-start leading-none">
             <span className="flex items-center gap-1">
@@ -33,7 +33,7 @@ const SkillsSection = () => {
             <span>HTML</span>
           </div>
         </div>
-        <div className="md:w-1/4 w-5/12 md:border-r-[1px] flex flex-col items-start gap-2 p-2  md:border-r-neutral-700">
+        <div className="md:w-1/4 w-[45%] sm:w-5/12 md:border-r-[1px] flex flex-col items-start gap-2 p-2  md:border-r-neutral-700">
           <span className="formaDJR font-bold text-xl">Backend</span>
           <div className="flex flex-col w-full gap-1 leading-none  justify-center items-start">
             <span>Node.js</span>
@@ -43,7 +43,7 @@ const SkillsSection = () => {
             <span>Python</span>
           </div>
         </div>{' '}
-        <div className="md:w-1/4 w-5/12 border-r-[1px] flex flex-col items-start gap-2 p-2  border-r-neutral-700">
+        <div className="md:w-1/4 w-[45%] sm:w-5/12 border-r-[1px] flex flex-col items-start gap-2 p-2  border-r-neutral-700">
           <span className="formaDJR font-bold text-xl">Design</span>
           <div className="flex flex-col w-full  leading-none items-start gap-1">
             <span>Figma</span>
@@ -51,7 +51,7 @@ const SkillsSection = () => {
             <span>TailwindCSS</span>
           </div>
         </div>{' '}
-        <div className="md:w-1/4 w-5/12 md:border-r-[1px]  flex flex-col items-start gap-2 p-2  md:border-r-neutral-700">
+        <div className="md:w-1/4 w-[45%] sm:w-5/12 md:border-r-[1px]  flex flex-col items-start gap-2 p-2  md:border-r-neutral-700">
           <span className="formaDJR font-bold text-xl">Tools and others</span>
           <div className="w-full flex flex-col items-start gap-1 leading-none">
             <span>Git / Github</span>

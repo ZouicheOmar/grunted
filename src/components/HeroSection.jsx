@@ -58,7 +58,7 @@ const HeroSection = () => {
             Currently at Erasmus Internation Network
           </span>
           <span className=" leading-tight"></span>
-          <div className="flex gap-2 mt-2 ml-2 ">
+          <div className="flex flex-wrap gap-2 mt-2 ml-2 ">
             <div className="cursor-pointer flex items-center rounded ">
               <GithubIcon className="w-[1.7rem]" />
               <span className=" ">Github</span>
