@@ -76,10 +76,10 @@ const Navbar = () => {
               The Digital Ship
             </span>
           </div>
-          <div className="navbar  text-3xl gap-4 flex flex-col  min-h-fit">
+          <div className="navbar md:text-xl text-3xl gap-4 flex flex-col min-h-fit">
             <p
               id="nav_item"
-              className="pl-[2rem] hover:underli hover:cursor-pointer hover:bg-indigo-800"
+              className="md:pl-[2rem] pl-[1rem] hover:underli hover:cursor-pointer hover:bg-indigo-800"
               onClick={handleGoToSkills}
             >
               <span className="jetBrains">01.</span>
