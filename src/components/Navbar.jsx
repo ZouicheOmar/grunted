@@ -31,7 +31,7 @@ async function animateNavbarItems() {
       // translateY: [0, 5],
       opacity: [0, 1],
     },
-    {duration: 0.3, delay: stagger(0.15)}
+    {duration: 0.1, delay: stagger(0.1)}
   )
 }
 
@@ -134,10 +134,16 @@ const SideMenu = () => {
 
   return (
     <div className="relative">
-      <span className="cursor-pointer" onClick={() => setOpen(!open)}>
+      <span
+        className="cursor-pointer"
+        onClick={() => {
+          setOpen(!open)
+          animateNavbarItems()
+        }}
+      >
         <div
           className={`${
-            open ? 'rotate-90' : 'rotate-0 opacity-5'
+            open ? 'rotate-0 opacity-5' : 'rotate-90'
           } transition-all duration-[500ms] ease-in-out `}
         >
           |||
@@ -145,10 +151,10 @@ const SideMenu = () => {
       </span>
       <div
         className={`${
-          open ? 'left-[50vw]' : 'left-[-50vw]'
-        } absolute w-[55vw] h-[100vh] top-0 bg-indigo-950 flex flex-col justify-between transition-all duration-[500ms] ease-in-out`}
+          open ? 'left-[-50vw]' : 'left-[50vw]'
+        } absolute z-10 w-[55vw] h-[100vh] top-0 text-xl bg-indigo-950 flex flex-col justify-between transition-all duration-[500ms] ease-in-out`}
       >
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-6 ">
           <p
             onClick={() => {
               setOpen(!open)
@@ -157,14 +163,62 @@ const SideMenu = () => {
           >
             X
           </p>
-          <span>Home</span>
-          <span>Skills</span>
-          <span>Projects</span>
-          <span>Experience</span>
-          <span>Contact</span>
+          <p
+            id="nav_item"
+            className="md:pl-[2rem] pl-[1rem] hover:underli hover:cursor-pointer hover:bg-indigo-800"
+            onClick={handleGoToSkills}
+          >
+            <span className="jetBrains">01.</span>
+            Skills
+          </p>
+          <p
+            id="nav_item"
+            className="md:pl-[2rem] pl-[1rem] hover:cursor-pointer hover:bg-indigo-800"
+            onClick={handleGoToProjects}
+          >
+            <span className="jetBrains">02.</span>
+            Projects
+          </p>
+          <p
+            id="nav_item"
+            className="md:pl-[2rem] pl-[1rem] hover:cursor-pointer hover:bg-indigo-800 "
+            onClick={handleGoToExp}
+          >
+            <span className="jetBrains">03.</span>
+            Experiences
+          </p>
+          <p
+            id="nav_item"
+            className="md:pl-[2rem] pl-[1rem] hover:cursor-pointer hover:bg-indigo-800 "
+            onClick={handleGoToContact}
+          >
+            <span className="jetBrains">04.</span>
+            Contact
+          </p>
+          <p
+            id="nav_item"
+            className="md:pl-[2rem] pl-[1rem] ml-[1rem] px-[1rem] w-fit border-[1px] border-[yellow] hover:cursor-pointer hover:bg-indigo-800
+             "
+          >
+            download Resume
+          </p>
+          <div
+            id="nav_item"
+            className="text-white flex gap-2 toanim pl-[1rem] md:pl-[2rem]"
+          >
+            <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
+              Github
+            </span>
+            <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
+              Mail
+            </span>
+            <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
+              Linkedin
+            </span>
+          </div>
         </div>
-        <div>
-          <span>Up</span>
+        <div className="pb-[10%] pr-[5%] bg-green-500">
+          <p className="text-end cursor-pointer">Up</p>
         </div>
       </div>
     </div>
