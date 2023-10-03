@@ -8,7 +8,7 @@ const ProjectsSection = () => {
   })
   return (
     <div
-      className=" w-full  rounded px-[5%] pt-[5rem] flex flex-col gap-2 h-fit md:h-screen"
+      className=" w-full rounded px-[5%] pt-[5rem] flex flex-col gap-2 h-fit md:h-screen"
       id="projects"
     >
       <p className="formaDJR font-bold text-5xl leading-tight">Projects</p>

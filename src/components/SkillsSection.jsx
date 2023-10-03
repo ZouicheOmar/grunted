@@ -10,7 +10,7 @@ const SkillsSection = () => {
   }, [])
   return (
     <div
-      className="basierFont w-full md:px-[5%] md:pt-[5rem] flex flex-col justify-center gap-2 h-fit md:h-screen"
+      className="basierFont w-full md:px-[5%] pt-[5rem] flex flex-col justify-center gap-2 h-fit md:h-screen"
       id="skills"
     >
       <p className="formaDJR font-bold text-5xl">Skills</p>

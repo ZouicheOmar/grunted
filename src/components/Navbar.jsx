@@ -2,8 +2,8 @@
 import {animate, stagger} from 'motion'
 import {useEffect, useState} from 'react'
 import fadeFromTop from '../functions/animations/fadeFromTop'
-
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
+import {ChevronUp, ArrowUp} from '../assets/icons'
 
 // async function triggerAnim() {
 //   const element = document.getElementById('nav_title')
@@ -112,22 +112,26 @@ const DropDown = () => {
 const SideMenu = () => {
   const [open, setOpen] = useState(false)
   const handleGoHome = () => {
-    const element = document.getElementById('hero')
-    element.scrollIntoView({behavior: 'smooth'})
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+    setOpen(false)
   }
   const handleGoToSkills = () => {
+    setOpen(false)
     const element = document.getElementById('skills')
     element.scrollIntoView({behavior: 'smooth'})
   }
   const handleGoToExp = () => {
+    setOpen(false)
     const element = document.getElementById('experiences')
     element.scrollIntoView({behavior: 'smooth'})
   }
   const handleGoToContact = () => {
+    setOpen(false)
     const element = document.getElementById('contact')
     element.scrollIntoView({behavior: 'smooth'})
   }
   const handleGoToProjects = () => {
+    setOpen(false)
     const element = document.getElementById('projects')
     element.scrollIntoView({behavior: 'smooth'})
   }
@@ -217,8 +221,10 @@ const SideMenu = () => {
             </span>
           </div>
         </div>
-        <div className="pb-[10%] pr-[5%] bg-green-500">
-          <p className="text-end cursor-pointer">Up</p>
+        <div id="nav_item" className=" flex justify-end pb-[35%]">
+          <span className="w-fit h-fit cursor-pointer" onClick={handleGoHome}>
+            <ArrowUp className="stroke-w-[1px] stroke-[yellow] w-[5rem] scale-150 " />
+          </span>
         </div>
       </div>
     </div>

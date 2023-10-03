@@ -45,7 +45,7 @@ const HeroSection = () => {
       </div>
 
       <div
-        id="hero"
+        id="mobile_hero"
         className="h-[80vh] md:hidden flex flex-col justify-center basierFont mt-[5rem] w-full"
       >
         <div className="  h-fit flex flex-col justify-center rounded ">
