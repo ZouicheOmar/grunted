@@ -2,8 +2,8 @@
 import {animate, stagger} from 'motion'
 import {useEffect, useState} from 'react'
 import fadeFromTop from '../functions/animations/fadeFromTop'
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import {ChevronUp, ArrowUp} from '../assets/icons'
+import {GithubIcon, LinkedInIcon, MailIcon, ExtLink} from '../assets/icons'
 
 // async function triggerAnim() {
 //   const element = document.getElementById('nav_title')
@@ -32,80 +32,6 @@ async function animateNavbarItems() {
       opacity: [0, 1],
     },
     {duration: 0.1, delay: stagger(0.1)}
-  )
-}
-
-const DropDown = () => {
-  const handleGoHome = () => {
-    const element = document.getElementById('hero')
-    element.scrollIntoView({behavior: 'smooth'})
-  }
-  const handleGoToSkills = () => {
-    const element = document.getElementById('skills')
-    element.scrollIntoView({behavior: 'smooth'})
-  }
-  const handleGoToExp = () => {
-    const element = document.getElementById('experiences')
-    element.scrollIntoView({behavior: 'smooth'})
-  }
-  const handleGoToContact = () => {
-    const element = document.getElementById('contact')
-    element.scrollIntoView({behavior: 'smooth'})
-  }
-  const handleGoToProjects = () => {
-    const element = document.getElementById('projects')
-    element.scrollIntoView({behavior: 'smooth'})
-  }
-  return (
-    <DropdownMenu.Root>
-      <DropdownMenu.Trigger className="p-0 m-0 focus:outline-none hover:ring-none">
-        <span className="border-2 rounded px-2">Menu</span>
-      </DropdownMenu.Trigger>
-      <DropdownMenu.Portal>
-        <DropdownMenu.Content className="text-[yellow] text-2xl w-[50vw] h-[100vh] bg-indigo-950 border-[1px] border-[yellow] text-yellow fromaDJR data-[state=open]:animate-[ data-[state=closed]:animate-[">
-          <DropdownMenu.Item>
-            {' '}
-            <p
-              id="nav_item"
-              className="md:pl-[2rem] pl-[1rem] hover:underli hover:cursor-pointer hover:bg-indigo-800"
-              onClick={handleGoToSkills}
-            >
-              <span className="jetBrains">01.</span>
-              Skills
-            </p>
-          </DropdownMenu.Item>
-          <DropdownMenu.Item>
-            <p
-              id="nav_item"
-              className="md:pl-[2rem] pl-[1rem] hover:cursor-pointer hover:bg-indigo-800"
-              onClick={handleGoToProjects}
-            >
-              <span className="jetBrains">02.</span>
-              Projects
-            </p>
-          </DropdownMenu.Item>
-          <DropdownMenu.Item>
-            <p
-              id="nav_item"
-              className="md:pl-[2rem] pl-[1rem] hover:cursor-pointer hover:bg-indigo-800 "
-              onClick={handleGoToExp}
-            >
-              <span className="jetBrains">03.</span>
-              Experiences
-            </p>
-
-            <p
-              id="nav_item"
-              className="md:pl-[2rem] pl-[1rem] hover:cursor-pointer hover:bg-indigo-800 "
-              onClick={handleGoToContact}
-            >
-              <span className="jetBrains">04.</span>
-              Contact
-            </p>
-          </DropdownMenu.Item>
-        </DropdownMenu.Content>
-      </DropdownMenu.Portal>
-    </DropdownMenu.Root>
   )
 }
 
@@ -148,7 +74,7 @@ const SideMenu = () => {
         <div
           className={`${
             open ? 'rotate-0 opacity-5' : 'rotate-90'
-          } transition-all duration-[500ms] ease-in-out `}
+          } pt-[0.5rem] font-bold scale-150 transition-all duration-[500ms] ease-in-out `}
         >
           |||
         </div>
@@ -163,7 +89,7 @@ const SideMenu = () => {
             onClick={() => {
               setOpen(!open)
             }}
-            className="cursor-pointer  text-end pr-[1.2rem]"
+            className="cursor-pointer font-bold jetBrains text-end pr-[1.2rem]"
           >
             X
           </p>
@@ -199,29 +125,59 @@ const SideMenu = () => {
             <span className="jetBrains">04.</span>
             Contact
           </p>
-          <p
-            id="nav_item"
-            className="md:pl-[2rem] pl-[1rem] ml-[1rem] px-[1rem] w-fit border-[1px] border-[yellow] hover:cursor-pointer hover:bg-indigo-800
-             "
-          >
-            download Resume
-          </p>
           <div
             id="nav_item"
-            className="text-white flex gap-2 toanim pl-[1rem] md:pl-[2rem]"
+            className="md:pl-[2rem] pl-[1rem] ml-[1rem] px-[1rem] py-1 flex gap-1 w-fit border-[1px] border-[yellow] hover:cursor-pointer hover:bg-indigo-800
+             "
           >
-            <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
-              Github
+            <span>
+              <ExtLink className="pb-1 h-[1.7rem] inline" />
             </span>
-            <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
-              Mail
-            </span>
-            <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
-              Linkedin
-            </span>
+            <span>Resume</span>
+          </div>
+          <div
+            id="nav_item"
+            className="text-white flex flex-col gap-2 toanim pl-[1rem] md:pl-[2rem]"
+          >
+            <a
+              href="https://github.com/ZouicheOmar"
+              target="blank"
+              className="flex gap-2 items-center hover:cursor-pointer"
+            >
+              <span>
+                <GithubIcon className="h-[1.7rem] inline" />
+              </span>
+              <span className=" hover:text-[yellow] hover:underline hover:underline-offset-4">
+                Github
+              </span>
+            </a>
+            <a
+              href="mailto:zouiche.omar@gmail.com?subject = Feedback&body = Message"
+              target="blank"
+              className="flex pl-[2px gap-3 items-end hover:cursor-pointer"
+            >
+              <span className="pl-[2px]">
+                <MailIcon className="w-[1.5rem] inline" />
+              </span>
+              <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
+                Mail
+              </span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/omar-zouiche-aaab27274/"
+              target="blank"
+              className="flex items-center gap-2 hover:cursor-pointer"
+            >
+              <span>
+                <LinkedInIcon className="h-[1.7rem] inline stroke-[1.5px]" />
+              </span>
+              <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
+                Linkedin
+              </span>
+            </a>
           </div>
         </div>
-        <div id="nav_item" className=" flex justify-end pb-[35%]">
+        <div id="nav_item" className=" flex justify-end pb-[75%]">
           <span className="w-fit h-fit cursor-pointer" onClick={handleGoHome}>
             <ArrowUp className="stroke-w-[1px] stroke-[yellow] w-[5rem] scale-150 " />
           </span>
@@ -252,11 +208,11 @@ const Navbar = () => {
     const element = document.getElementById('projects')
     element.scrollIntoView({behavior: 'smooth'})
   }
-
-  // triggerAnim()
+  const handleGoTop = () => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+  }
 
   useEffect(() => {
-    // triggerAnim()
     fadeFromTop('nav_title')
     animateNavbarItems()
   }, [])
@@ -307,34 +263,56 @@ const Navbar = () => {
               <span className="jetBrains">04.</span>
               Contact
             </p>
-            <p
+            <div
               id="nav_item"
-              className="toanim ml-[1rem] px-[1rem] w-fit border-[1px] border-[yellow] hover:cursor-pointer hover:bg-indigo-800
+              className="toanim ml-[2rem] px-[1rem] py-[0.5rem] flex gap-1 w-fit border-[1px] border-[yellow] hover:cursor-pointer hover:bg-indigo-800
              "
             >
-              download Resume
-            </p>
+              <span>
+                <ExtLink className="pb-1 h-[1.7rem] inline" />
+              </span>
+              <span>Resume</span>
+            </div>
             <div className="text-lg text-white mt-[25%] flex gap-2 toanim pl-[2rem]">
-              <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
-                Github
-              </span>
-              <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
-                Mail
-              </span>
-              <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
-                Linkedin
-              </span>
+              <a
+                href="https://github.com/ZouicheOmar"
+                target="blank"
+                className="flex gap-2 items-center hover:cursor-pointer"
+              >
+                <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
+                  Github
+                </span>
+              </a>
+              <a
+                href="https://github.com/ZouicheOmar"
+                target="blank"
+                className="flex gap-2 items-center hover:cursor-pointer"
+              >
+                <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
+                  Mail
+                </span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/omar-zouiche-aaab27274/"
+                target="blank"
+                className="flex items-center gap-2 hover:cursor-pointer"
+              >
+                <span className=" hover:cursor-pointer hover:text-[yellow] hover:underline hover:underline-offset-4">
+                  Linkedin
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="fixed md:hidden ml-0 mr-0 top-0 left-0 min-w-full text-[yellow] h-[4rem] py-4 px-2 bg-indigo-950 flex justify-between">
-        <span className="cursor-pointer text-2xl font-bold jetBrains hover:underline hover:underline-offset-4">
+      <div className="fixed z-10 md:hidden ml-0 mr-0 top-0 left-0 min-w-full text-[yellow] h-[4rem] py-4 px-2 bg-indigo-950 flex justify-between">
+        <span
+          className="cursor-pointer text-2xl font-bold jetBrains hover:underline hover:underline-offset-4"
+          onClick={handleGoTop}
+        >
           O.Z.docs
         </span>
-        {/* <DropDown /> */}
         <SideMenu />
-        {/* <span className="title">MENU</span> */}
       </div>
     </>
   )

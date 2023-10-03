@@ -4,9 +4,8 @@ import {animate} from 'motion'
 
 async function fadeFromTop(selector) {
   const element = document.getElementById(selector)
-  console.log(element.getBoundingClientRect())
   await animate(
-    '#nav_title',
+    element,
     {
       color: ['red', 'yellow'],
       y: [-15, 0],

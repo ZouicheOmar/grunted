@@ -1,10 +1,15 @@
 /** @format */
 import {useEffect} from 'react'
 import fadeInView from '../functions/animations/fadeInView'
+import {ArrowUp} from '../assets/icons'
 
 import {GithubIcon, MailIcon, LinkedInIcon} from '../assets/icons'
 
 const HeroSection = () => {
+  const handleArrowDown = () => {
+    const element = document.getElementById('skills')
+    element.scrollIntoView({behavior: 'smooth', inline: 'start'})
+  }
   useEffect(() => {
     fadeInView('#hero')
   })
@@ -46,18 +51,22 @@ const HeroSection = () => {
 
       <div
         id="mobile_hero"
-        className="h-[80vh] md:hidden flex flex-col justify-center basierFont mt-[5rem] w-full"
+        className="relative h-[80vh] md:hidden flex flex-col justify-center basierFont mt-[5rem] w-full"
       >
         <div className="  h-fit flex flex-col justify-center rounded ">
-          <span className="formatDJR text-2xl">Hello, Bonjour, مرحباً</span>
-          <span className="title text-5xl">I am Omar Zouiche</span>
-          <span className=" font-[500] text-xl leading-tight">
+          {/* <span className="formatDJR text-2xl">Hello, Bonjour, مرحباً</span> */}
+          <span className="title text-5xl">Omar Zouiche</span>
+          {/* <span className=" font-[500] text-xl leading-tight">
             A Frontend developper, ex math student who lately got obssessed on
             creating magic by typing logic on his computer, based in France
             <br />
             Currently at Erasmus Internation Network
+          </span> */}
+          <span className=" font-[500] text-xl leading-tight">
+            A FrontEnd developer, mathematics enthousiat, based in France
+            {/* <br />
+            Currently at Erasmus Internation Network */}
           </span>
-          <span className=" leading-tight"></span>
           <div className="flex flex-wrap gap-2 mt-2 ml-2 ">
             <div className="cursor-pointer flex items-center rounded ">
               <GithubIcon className="w-[1.7rem]" />
@@ -72,6 +81,12 @@ const HeroSection = () => {
               <span className=" ">LinkedIn</span>
             </div>
           </div>
+          <span
+            className="absolute cursor-pointer bottom-[1rem] right-[1rem]"
+            onClick={handleArrowDown}
+          >
+            <ArrowUp className="rotate-180 scale-125" />
+          </span>
         </div>
       </div>
     </>
