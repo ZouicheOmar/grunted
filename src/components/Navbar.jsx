@@ -1,6 +1,6 @@
 /** @format */
 import {animate, stagger} from 'motion'
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
 import fadeFromTop from '../functions/animations/fadeFromTop'
 
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
@@ -32,6 +32,142 @@ async function animateNavbarItems() {
       opacity: [0, 1],
     },
     {duration: 0.3, delay: stagger(0.15)}
+  )
+}
+
+const DropDown = () => {
+  const handleGoHome = () => {
+    const element = document.getElementById('hero')
+    element.scrollIntoView({behavior: 'smooth'})
+  }
+  const handleGoToSkills = () => {
+    const element = document.getElementById('skills')
+    element.scrollIntoView({behavior: 'smooth'})
+  }
+  const handleGoToExp = () => {
+    const element = document.getElementById('experiences')
+    element.scrollIntoView({behavior: 'smooth'})
+  }
+  const handleGoToContact = () => {
+    const element = document.getElementById('contact')
+    element.scrollIntoView({behavior: 'smooth'})
+  }
+  const handleGoToProjects = () => {
+    const element = document.getElementById('projects')
+    element.scrollIntoView({behavior: 'smooth'})
+  }
+  return (
+    <DropdownMenu.Root>
+      <DropdownMenu.Trigger className="p-0 m-0 focus:outline-none hover:ring-none">
+        <span className="border-2 rounded px-2">Menu</span>
+      </DropdownMenu.Trigger>
+      <DropdownMenu.Portal>
+        <DropdownMenu.Content className="text-[yellow] text-2xl w-[50vw] h-[100vh] bg-indigo-950 border-[1px] border-[yellow] text-yellow fromaDJR data-[state=open]:animate-[ data-[state=closed]:animate-[">
+          <DropdownMenu.Item>
+            {' '}
+            <p
+              id="nav_item"
+              className="md:pl-[2rem] pl-[1rem] hover:underli hover:cursor-pointer hover:bg-indigo-800"
+              onClick={handleGoToSkills}
+            >
+              <span className="jetBrains">01.</span>
+              Skills
+            </p>
+          </DropdownMenu.Item>
+          <DropdownMenu.Item>
+            <p
+              id="nav_item"
+              className="md:pl-[2rem] pl-[1rem] hover:cursor-pointer hover:bg-indigo-800"
+              onClick={handleGoToProjects}
+            >
+              <span className="jetBrains">02.</span>
+              Projects
+            </p>
+          </DropdownMenu.Item>
+          <DropdownMenu.Item>
+            <p
+              id="nav_item"
+              className="md:pl-[2rem] pl-[1rem] hover:cursor-pointer hover:bg-indigo-800 "
+              onClick={handleGoToExp}
+            >
+              <span className="jetBrains">03.</span>
+              Experiences
+            </p>
+
+            <p
+              id="nav_item"
+              className="md:pl-[2rem] pl-[1rem] hover:cursor-pointer hover:bg-indigo-800 "
+              onClick={handleGoToContact}
+            >
+              <span className="jetBrains">04.</span>
+              Contact
+            </p>
+          </DropdownMenu.Item>
+        </DropdownMenu.Content>
+      </DropdownMenu.Portal>
+    </DropdownMenu.Root>
+  )
+}
+
+const SideMenu = () => {
+  const [open, setOpen] = useState(false)
+  const handleGoHome = () => {
+    const element = document.getElementById('hero')
+    element.scrollIntoView({behavior: 'smooth'})
+  }
+  const handleGoToSkills = () => {
+    const element = document.getElementById('skills')
+    element.scrollIntoView({behavior: 'smooth'})
+  }
+  const handleGoToExp = () => {
+    const element = document.getElementById('experiences')
+    element.scrollIntoView({behavior: 'smooth'})
+  }
+  const handleGoToContact = () => {
+    const element = document.getElementById('contact')
+    element.scrollIntoView({behavior: 'smooth'})
+  }
+  const handleGoToProjects = () => {
+    const element = document.getElementById('projects')
+    element.scrollIntoView({behavior: 'smooth'})
+  }
+
+  return (
+    <div className="relative">
+      <span className="cursor-pointer" onClick={() => setOpen(!open)}>
+        <div
+          className={`${
+            open ? 'rotate-90' : 'rotate-0 opacity-5'
+          } transition-all duration-[500ms] ease-in-out `}
+        >
+          |||
+        </div>
+      </span>
+      <div
+        className={`${
+          open ? 'left-[50vw]' : 'left-[-50vw]'
+        } absolute w-[55vw] h-[100vh] top-0 bg-indigo-950 flex flex-col justify-between transition-all duration-[500ms] ease-in-out`}
+      >
+        <div className="flex flex-col">
+          <p
+            onClick={() => {
+              setOpen(!open)
+            }}
+            className="cursor-pointer  text-end pr-[1.2rem]"
+          >
+            X
+          </p>
+          <span>Home</span>
+          <span>Skills</span>
+          <span>Projects</span>
+          <span>Experience</span>
+          <span>Contact</span>
+        </div>
+        <div>
+          <span>Up</span>
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -136,56 +272,8 @@ const Navbar = () => {
         <span className="cursor-pointer text-2xl font-bold jetBrains hover:underline hover:underline-offset-4">
           O.Z.docs
         </span>
-        <DropdownMenu.Root>
-          <DropdownMenu.Trigger className="p-0 m-0 focus:outline-none hover:ring-none">
-            <span className="border-2 rounded px-2">Menu</span>
-          </DropdownMenu.Trigger>
-          <DropdownMenu.Portal>
-            <DropdownMenu.Content className="text-[yellow] text-2xl w-[50vw] h-[100vh] bg-indigo-950 border-[1px] border-[yellow] text-yellow fromaDJR data-[state=open]:animate-[ data-[state=closed]:animate-[">
-              <DropdownMenu.Item>
-                {' '}
-                <p
-                  id="nav_item"
-                  className="md:pl-[2rem] pl-[1rem] hover:underli hover:cursor-pointer hover:bg-indigo-800"
-                  onClick={handleGoToSkills}
-                >
-                  <span className="jetBrains">01.</span>
-                  Skills
-                </p>
-              </DropdownMenu.Item>
-              <DropdownMenu.Item>
-                <p
-                  id="nav_item"
-                  className="md:pl-[2rem] pl-[1rem] hover:cursor-pointer hover:bg-indigo-800"
-                  onClick={handleGoToProjects}
-                >
-                  <span className="jetBrains">02.</span>
-                  Projects
-                </p>
-              </DropdownMenu.Item>
-              <DropdownMenu.Item>
-                <p
-                  id="nav_item"
-                  className="md:pl-[2rem] pl-[1rem] hover:cursor-pointer hover:bg-indigo-800 "
-                  onClick={handleGoToExp}
-                >
-                  <span className="jetBrains">03.</span>
-                  Experiences
-                </p>
-
-                <p
-                  id="nav_item"
-                  className="md:pl-[2rem] pl-[1rem] hover:cursor-pointer hover:bg-indigo-800 "
-                  onClick={handleGoToContact}
-                >
-                  <span className="jetBrains">04.</span>
-                  Contact
-                </p>
-              </DropdownMenu.Item>
-            </DropdownMenu.Content>
-          </DropdownMenu.Portal>
-        </DropdownMenu.Root>
-
+        {/* <DropDown /> */}
+        <SideMenu />
         {/* <span className="title">MENU</span> */}
       </div>
     </>
