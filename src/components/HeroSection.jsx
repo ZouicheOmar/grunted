@@ -46,7 +46,7 @@ const HeroSection = () => {
 
       <div
         id="hero"
-        className="h-[80vh] flex flex-col justify-center basierFont mt-[5rem] w-full"
+        className="h-[80vh] md:hidden flex flex-col justify-center basierFont mt-[5rem] w-full"
       >
         <div className="  h-fit flex flex-col justify-center rounded ">
           <span className="formatDJR text-2xl">Hello, Bonjour, مرحباً</span>
