@@ -16,11 +16,11 @@ const HeroSection = () => {
   return (
     <>
       <div
-        className="hidden w-full h-screen md:grid place-content-center place-items-center rounded p-2"
+        className="relative hidden w-full h-screen md:grid place-content-center place-items-center rounded p-2"
         // className="w-full h-screen flex flex-col justify-center rounded p-2"
         id="hero"
       >
-        <div className=" w-fit h-fit flex flex-col justify-center rounded p-2">
+        <div className="z-10 w-fit h-fit flex flex-col justify-center rounded p-2">
           <span className="formatDJR text-2xl">Hello, Bonjour, مرحباً</span>
           <span className="title text-5xl">My name is Omar Zouiche</span>
           <span className="basierFont font-[500] text-xl w-1/2 leading-tight">
@@ -47,13 +47,16 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+        <div className="absolute w-full h-full mix-blend-luminosity border-white top-0 left-0 z-0">
+          <img src="./twareg.png" />
+        </div>
       </div>
 
       <div
         id="mobile_hero"
         className="relative h-[80vh] md:hidden flex flex-col justify-center basierFont mt-[5rem] w-full"
       >
-        <div className="  h-fit flex flex-col justify-center rounded ">
+        <div className=" z-10  h-fit flex flex-col justify-center rounded ">
           {/* <span className="formatDJR text-2xl">Hello, Bonjour, مرحباً</span> */}
           <span className="title text-5xl">Omar Zouiche</span>
           {/* <span className=" font-[500] text-xl leading-tight">
@@ -87,6 +90,12 @@ const HeroSection = () => {
           >
             <ArrowUp className="rotate-180 scale-125" />
           </span>
+        </div>
+        <div className="absolute w-full h-full mix-blend-luminosity	 top-0 left-0 z-0">
+          <img
+            src="./twareg.png"
+            className="object-cover object-right-bottom  h-full opacity-60 "
+          />
         </div>
       </div>
     </>
