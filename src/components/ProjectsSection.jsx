@@ -9,11 +9,11 @@ const ProjectsSection = () => {
   })
   return (
     <div
-      className=" w-full rounded  md:px-[5%] pt-[5rem]  flex flex-col gap-2 h-fit cursor-default"
+      className="relative w-full rounded  md:px-[5%] pt-[5rem]  flex flex-col gap-2 h-fit cursor-default"
       id="projects"
     >
       <p className="formaDJR font-bold text-5xl leading-tight">Projects</p>
-      <div className="basierFont light:text-neutral-900 mt-[0.5rem]  dark:text-white border-b-[1px] border-b-neutral-500 pb-[2rem] ">
+      <div className="z-10 basierFont light:text-neutral-900 mt-[0.5rem]  dark:text-white border-b-[1px] border-b-neutral-500 pb-[2rem] ">
         <span className="text-xl light:text-neutral-900 dark:text-white formaDJR font-[500] ">
           Web Development for Erasmus Internation Network{' '}
           <span className="jetBrains text-sm flex text-orange-500">
@@ -35,7 +35,7 @@ const ProjectsSection = () => {
         </p>
       </div>
 
-      <div className="basierFont light:text-neutral-900 dark:text-white mt-[1rem] border-b-[1px] border-b-neutral-500 pb-[2rem] ">
+      <div className="z-10 basierFont light:text-neutral-900 dark:text-white mt-[1rem] border-b-[1px] border-b-neutral-500 pb-[2rem] ">
         <span className="text-xl light:text-neutral-900 dark:text-white formaDJR font-[500] ">
           Data optimisation and Mathematical Models
         </span>
@@ -71,22 +71,25 @@ const ProjectsSection = () => {
         </p>
       </div>
 
-      <div className="basierFont light:text-neutral-900 dark:text-white mt-[1rem] border-b-0 pb-2 ">
+      <div className="z-10 basierFont light:text-neutral-900 dark:text-white mt-[1rem] border-b-0 pb-2 ">
         <span className="text-xl light:text-neutral-900 dark:text-white formaDJR font-[500] ">
           Experiments & Other Projects
         </span>
         <br />
-        <div className="flex">
-          Other quick projects and personal experiments can be found on my&nbsp;
-          <a
-            href="https://github.com/ZouicheOmar"
-            target="blank"
-            className="flex cursor-pointer hover:underline hover:underline-offset-2  gap-1 w-fit items-center"
-          >
-            Github
-            <GithubIcon className="h-[1.2rem]" />
-          </a>
-        </div>
+        <p>
+          Other quick projects and personal experiments can be found on my{' '}
+          <span className="cursor-pointer hover:underline hover:underline-offset-2  gap-1 w-fit items-center">
+            <a href="https://github.com/ZouicheOmar" target="blank">
+              Github
+            </a>
+          </span>
+        </p>
+      </div>
+      <div className="absolute z-0 h-full mix-blend-exclusion dark:mix-blend-normal ">
+        <img
+          src="./crane.png"
+          className="object-cover object-right-bottom dark:opacity-30 h-[70%] lg:h-full"
+        />
       </div>
     </div>
   )
