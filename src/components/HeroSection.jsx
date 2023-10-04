@@ -98,7 +98,7 @@ const HeroSection = () => {
             <ArrowUp className="rotate-180 scale-150" />
           </span>
         </div>
-        <div className="absolute w-full h-full mixblend-luminosity	 top-0 left-0 z-0">
+        <div className="absolute w-full h-5/6 mixblend-luminosity top-0 left-0 z-0">
           <img
             src="./twareg.png"
             className="object-cover opacity-30 object-right-bottom h-full dark:opacity-60 "
