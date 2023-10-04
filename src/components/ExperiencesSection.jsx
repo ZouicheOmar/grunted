@@ -15,8 +15,10 @@ const ExperiencesSection = () => {
       <div className="basierFont light:text-neutral-900 dark:text-white mt-[0.5rem] border-b-[1px] border-b-neutral-500 pb-2 ">
         <div>
           <span className="text-xl light:text-neutral-900 dark:text-white formaDJR font-[500] ">
-            Fullstack Developer @ Erasmus Internation Network{' '}
-            <span className="jetBrains text-sm text-orange-500">(Current)</span>
+            Fullstack Developer @ Erasmus Internation Network <br />
+            <span className="jetBrains text-sm text-orange-500">
+              (to Dec. 2023)
+            </span>
           </span>
           <br />
           <div className="leading-tight py-2 pl-1 md:pl-2 basierFont">
