@@ -2,20 +2,16 @@
 import {useEffect} from 'react'
 import fadeInView from '../functions/animations/fadeInView'
 
-import React from '../assets/react.svg'
-
 const SkillsSection = () => {
   useEffect(() => {
     fadeInView('#skills')
   }, [])
   return (
     <div
-      className="basierFont w-full md:px-[5%] pt-[5rem] flex flex-col justify-center gap-2 h-fit md:h-screen"
+      className="basierFont  w-full md:px-[5%]  pt-[5rem] flex flex-col justify-center gap-2 h-fit md:h-screen"
       id="skills"
     >
       <p className="formaDJR font-bold text-5xl">Skills</p>
-      {/* <p className="basierFont">à mettre en avant</p> */}
-
       <div className="w-full flex md:text-xl flex-wrap md:flex-nowrap justify-center mt-[0.5rem] gap-x-2 md:gap-4 border-b-[1px] border-b-neutral-700">
         <div className="md:w-1/4 w-[47%] sm:w-5/12 flex flex-col items-start gap-2 p-2 border-r-[1px] border-r-neutral-700 border-b-[1px] border-b-neutral-700 md:border-b-0  ">
           <span className="formaDJR font-bold text-xl md:text-2xl">
@@ -87,3 +83,5 @@ const SkillsSection = () => {
 }
 
 export default SkillsSection
+
+// mt-[5rem] md:mt-0

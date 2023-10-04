@@ -9,7 +9,7 @@ const ProjectsSection = () => {
   })
   return (
     <div
-      className=" w-full rounded md:px-[5%] pt-[5rem]  flex flex-col gap-2 h-fit cursor-default"
+      className=" w-full rounded  md:px-[5%] pt-[5rem]  flex flex-col gap-2 h-fit cursor-default"
       id="projects"
     >
       <p className="formaDJR font-bold text-5xl leading-tight">Projects</p>
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
           Implemeting a user authentification system, product (events) listing,
           payment system, deployment and maintenance
         </p>
-        <p className="pt-1 leading-tight text-slate-300">
+        <p className="pt-1 leading-tight text-neutral-500 dark:text-slate-300">
           {' '}
           Stack : React.js, TailwindCSS, RadixUI, Node.js, Supabase, PostgreSQL,
           Vercel
@@ -65,7 +65,7 @@ const ProjectsSection = () => {
           data analysis & optimization, solving mathematical models using
           Python, where I dived deeply in pure programming
         </p>
-        <p className="pt-1 leading-tight text-slate-300">
+        <p className="pt-1 leading-tight text-neutral-500 dark:text-slate-300">
           {' '}
           Stack : HTML, CSS, Javascript, Python, FreeFEM, C++
         </p>

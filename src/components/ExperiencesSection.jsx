@@ -40,29 +40,23 @@ const ExperiencesSection = () => {
         <p className="formaDJR font-bold text-2xl">Education</p>
         <div className="basierFont">
           <ul className="list-disc list-inside">
-            {/* <li className=""> */}
             <span className="text-lg ">
               Masters 1 in Mathematical Models and Numerical Analysis
             </span>
-            {/* <br />
-            <span className=" text-slate-300">
-              Programming relevant courses :
-            </span> */}
-            {/* </li> */}
-            <ul className="pl-4 pt-1 pb-2 text-slate-300 list-disc list-inside leading-tight">
+            <ul className="pl-4 pt-1 pb-2 text-neutral-700 dark:text-slate-300 list-disc list-inside leading-tight">
               <li>Object Oriented Programming in C++</li>
               <li>Data Analysis & Functionnal Optimization</li>
               <li>Mathematical Models & Equations using FreeFEM</li>
             </ul>
             <span className="text-lg ">Mathematics Degree</span>
-            <ul className="pl-4 pt-1 pb-2 text-slate-300 list-disc list-inside leading-tight">
+            <ul className="pl-4 pt-1 pb-2 text-neutral-700 dark:text-slate-300 list-disc list-inside leading-tight">
               <li>Mathematical Optimization using Python </li>
               <li>Numerical Analysis</li>
             </ul>
             <span className="text-lg ">
               Technology & Engeneering Sciences School
             </span>
-            <ul className="pl-4 pt-1 pb-2 text-slate-300 list-disc list-inside leading-tight">
+            <ul className="pl-4 pt-1 pb-2 text-neutral-700 dark:text-slate-300 list-disc list-inside leading-tight">
               <li>Programming in Python</li>
               <li>Matlab & Arduino, AutoCAD design</li>
             </ul>

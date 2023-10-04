@@ -12,29 +12,26 @@ const HeroSection = () => {
   }
   useEffect(() => {
     fadeInView('#hero')
+    fadeInView('#mobile_hero')
   })
   return (
     <>
       <div
         className="relative hidden w-full h-screen md:grid place-content-center place-items-center rounded p-2"
-        // className="w-full h-screen flex flex-col justify-center rounded p-2"
         id="hero"
       >
         <div className="z-10 w-fit h-fit flex flex-col justify-center rounded p-2">
-          <span className="formatDJR text-2xl">Hello, Bonjour, مرحباً</span>
+          {/* <span className="formatDJR text-2xl">Hello, Bonjour, مرحباً</span> */}
           <span className="title text-5xl">Omar Zouiche</span>
-          <span className="basierFont font-[500] text-xl w-1/2 leading-tight">
+          <span className="dark:basierFont formaDJR font-bold dark:font-[500] text-xl w-1/2 leading-tight">
             A Frontend Developer, graduate in Mathematics, interested in App
             Design and User Experience, Constant learner, currently based in
             France
           </span>
-          {/* <span className="formaDJR text-xl w-1/2 leading-tight">
-            Currently at Erasmus Internation Network
-          </span> */}
-          <div className="flex gap-3">
-            <div className="cursor-pointer flex items-end gap-1  w-fit p-1 px-2 rounded ">
+          <div className="flex gap-3 font-[500] dark:font-normal">
+            <div className="cursor-pointer  flex items-end gap-1  w-fit p-1 px-2 rounded ">
               <GithubIcon className="w-[1.8rem] stroke-[1.5px]" />
-              <span className="formaDJR text-lg">Github</span>
+              <span className="formaDJR text-lg ">Github</span>
             </div>
             <div className="cursor-pointer flex items-end gap-1  w-fit p-1 px-2 rounded ">
               <MailIcon className="w-[2rem] stroke-[1.5px]" />
@@ -47,29 +44,24 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="absolute w-full h-full mix-blend- border-white top-0 left-0 z-0">
-          <img src="./twareg.png" />
+          <img
+            src="./twareg.png"
+            className="object-cover object-right-bottom h-full"
+          />
         </div>
       </div>
 
       <div
         id="mobile_hero"
-        className="relative h-[80vh] md:hidden flex flex-col justify-center basierFont mt-[5rem] w-full"
+        className="relative md:h-[80vh] h-screen  md:hidden flex flex-col justify-center basierFont mt-[5rem] w-full"
       >
         <div className="z-10 h-fit flex flex-col justify-center rounded ">
-          {/* <span className="formatDJR text-2xl">Hello, Bonjour, مرحباً</span> */}
           <span className="title text-5xl">Omar Zouiche</span>
-          {/* <span className=" font-[500] text-xl leading-tight">
-            A Frontend developper, ex math student who lately got obssessed on
-            creating magic by typing logic on his computer, based in France
-            <br />
-            Currently at Erasmus Internation Network
-          </span> */}
-          <span className=" font-[500] text-xl leading-tight">
+
+          <span className="dark:basierFont formaDJR font-[500] dark:font-[500]  text-xl leading-tight">
             A Frontend Developer, graduate in Mathematics, interested in App
             Design and User Experience, Constant learner, currently based in
             France{' '}
-            {/* <br />
-            Currently at Erasmus Internation Network */}
           </span>
           <div className="flex flex-wrap gap-x-10 gap-y-2 mt-6 ml2 ">
             <a
@@ -84,7 +76,6 @@ const HeroSection = () => {
             <a
               href="mailto:zouiche.omar@gmail.com?subject = Feedback&body = Message"
               target="blank"
-              // className="flex  gap-3 items-end hover:cursor-pointer"
               className="cursor-pointer flex items-center gap-1  w-fit  rounded "
             >
               <MailIcon className="w-[1.7rem]" />
@@ -101,16 +92,16 @@ const HeroSection = () => {
             </a>
           </div>
           <span
-            className="absolute cursor-pointer bottom-[1rem] right-[1rem]"
+            className="absolute cursor-pointer bottom-[20%] right-[1rem]"
             onClick={handleArrowDown}
           >
-            <ArrowUp className="rotate-180 scale-125" />
+            <ArrowUp className="rotate-180 scale-150" />
           </span>
         </div>
-        <div className="absolute w-full h-full mix-blend-luminosity	 top-0 left-0 z-0">
+        <div className="absolute w-full h-full mixblend-luminosity	 top-0 left-0 z-0">
           <img
             src="./twareg.png"
-            className="object-cover object-right-bottom  h-full opacity-60 "
+            className="object-cover opacity-30 object-right-bottom h-full dark:opacity-60 "
           />
         </div>
       </div>
