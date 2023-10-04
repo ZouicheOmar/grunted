@@ -65,7 +65,7 @@ const SideMenu = () => {
   return (
     <div className="relative">
       <span
-        className="cursor-pointer"
+        className="cursor-pointer  "
         onClick={() => {
           setOpen(!open)
           animateNavbarItems()
@@ -123,7 +123,8 @@ const SideMenu = () => {
             onClick={handleGoToContact}
           >
             <span className="jetBrains">04.</span>
-            Contact
+            {/* Contact */}
+            Subjet
           </p>
           <div
             id="nav_item"
@@ -224,10 +225,11 @@ const Navbar = () => {
           <div className="bg-red- relative w-full min-h-[10rem] flex-col">
             <span
               id="nav_title"
-              className="cursor-pointer"
+              className="cursor-pointer pl-[1rem] "
               onClick={handleGoHome}
             >
-              The Digital Ship
+              {/* The Digital Ship */}
+              O.Z.docs
             </span>
           </div>
           <div className="navbar md:text-xl text-3xl gap-4 flex flex-col min-h-fit">
@@ -307,7 +309,7 @@ const Navbar = () => {
       </div>
       <div className="fixed  z-20 md:hidden ml-0 mr-0 top-0 left-0 min-w-full text-[yellow] h-[4rem] py-4 px-2 bg-indigo-950 flex justify-between">
         <span
-          className="cursor-pointer text-2xl font-bold jetBrains hover:underline hover:underline-offset-4"
+          className="cursor-pointer solata  text-2xl font-bold hover:underline hover:underline-offset-4"
           onClick={handleGoTop}
         >
           O.Z.docs

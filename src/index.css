@@ -6,9 +6,12 @@
 @import url('https://fonts.cdnfonts.com/css/jetbrains-mono');
 @import url('https://fonts.cdnfonts.com/css/mac-sans');
 
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inconsolata:wght@500;600&family=VT323&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   /* line-height: 1.5; */
@@ -81,7 +84,11 @@ button:focus-visible {
 
 #nav_title {
   position: absolute;
-  font-family: 'Forma DJR Banner', sans-serif;
+  /* font-family: 'Forma DJR Banner', sans-serif; */
+  /* font-family: 'Fragment Mono', monospace; */
+  font-family: 'Inconsolata', monospace;
+  /* font-family: 'VT323', monospace; */
+  font-weight: 600;
   font-size: 2rem;
   max-width: fit-content;
   line-height: 1;
@@ -116,4 +123,14 @@ button:focus-visible {
 
 .macSans {
   font-family: 'Mac Sans', sans-serif;
+}
+
+.fragMono {
+  font-family: 'Fragment Mono', monospace;
+}
+.solata {
+  font-family: 'Inconsolata', monospace;
+}
+.vt323 {
+  font-family: 'VT323', monospace;
 }

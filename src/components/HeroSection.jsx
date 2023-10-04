@@ -71,19 +71,34 @@ const HeroSection = () => {
             {/* <br />
             Currently at Erasmus Internation Network */}
           </span>
-          <div className="flex flex-wrap gap-2 mt-2 ml-2 ">
-            <div className="cursor-pointer flex items-center rounded ">
+          <div className="flex flex-wrap gap-x-10 gap-y-2 mt-6 ml2 ">
+            <a
+              href="https://github.com/ZouicheOmar"
+              target="blank"
+              className="cursor-pointer flex items-center rounded "
+            >
+              {' '}
               <GithubIcon className="w-[1.7rem]" />
               <span className=" ">Github</span>
-            </div>
-            <div className="cursor-pointer flex items-center gap-1  w-fit  rounded ">
+            </a>
+            <a
+              href="mailto:zouiche.omar@gmail.com?subject = Feedback&body = Message"
+              target="blank"
+              // className="flex  gap-3 items-end hover:cursor-pointer"
+              className="cursor-pointer flex items-center gap-1  w-fit  rounded "
+            >
               <MailIcon className="w-[1.7rem]" />
               <span className="">zouiche.omar@gmail.com</span>
-            </div>
-            <div className="flex items-center gap-1 w-fit  rounded cursor-pointer ">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/omar-zouiche-aaab27274/"
+              target="blank"
+              className="flex items-center gap-1 hover:cursor-pointer"
+              // className="flex items-center gap-1 w-fit  rounded cursor-pointer "
+            >
               <LinkedInIcon className="w-[1.7rem]" />
               <span className=" ">LinkedIn</span>
-            </div>
+            </a>
           </div>
           <span
             className="absolute cursor-pointer bottom-[1rem] right-[1rem]"
