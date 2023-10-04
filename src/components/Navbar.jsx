@@ -4,6 +4,7 @@ import {useEffect, useState} from 'react'
 import fadeFromTop from '../functions/animations/fadeFromTop'
 import {ArrowUp} from '../assets/icons'
 import {GithubIcon, LinkedInIcon, MailIcon, ExtLink} from '../assets/icons'
+import pdf from '../assets/CV-ZOUICHE.pdf'
 
 async function animateNavbarItems() {
   await animate(
@@ -110,8 +111,11 @@ const SideMenu = () => {
               {/* Contact */}
               Subjet
             </p>
-            <div
+            <a
               id="nav_item"
+              href={pdf}
+              target="_blank"
+              rel="noreferrer"
               className="md:pl-[2rem] pl-[1rem] ml-[1rem] px-[1rem] py-1 flex gap-1 w-fit border-[1px] border-[yellow] hover:cursor-pointer hover:bg-indigo-800
              "
             >
@@ -119,7 +123,7 @@ const SideMenu = () => {
                 <ExtLink className="pb-1 h-[1.7rem] inline" />
               </span>
               <span>Resume</span>
-            </div>
+            </a>
             <div
               id="nav_item"
               className="text-white flex flex-col gap-2 toanim pl-[1rem] md:pl-[2rem]"
@@ -250,8 +254,11 @@ const Navbar = () => {
               <span className="jetBrains">04.</span>
               Contact
             </p>
-            <div
+            <a
               id="nav_item"
+              href={pdf}
+              target="_blank"
+              rel="noreferrer"
               className="toanim ml-[2rem] px-[1rem] py-[0.5rem] flex gap-1 w-fit border-[1px] border-[yellow] hover:cursor-pointer hover:bg-indigo-800
              "
             >
@@ -259,7 +266,7 @@ const Navbar = () => {
                 <ExtLink className="pb-1 h-[1.7rem] inline" />
               </span>
               <span>Resume</span>
-            </div>
+            </a>
             <div className="text-lg text-white mt-[25%] flex gap-2 toanim pl-[2rem]">
               <a
                 href="https://github.com/ZouicheOmar"

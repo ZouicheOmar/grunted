@@ -2,6 +2,7 @@
 import {useEffect} from 'react'
 import fadeInView from '../functions/animations/fadeInView'
 import {GithubIcon, MailIcon, LinkedInIcon, ExtLink} from '../assets/icons'
+import pdf from '../assets/CV-ZOUICHE.pdf'
 
 const ContactSection = () => {
   useEffect(() => {
@@ -51,9 +52,10 @@ const ContactSection = () => {
             zouiche.omar@gmail.com
           </a>
           <a
+            href={pdf}
+            target="_blank"
+            rel="noreferrer"
             className="flex items-center gap-2  w-full"
-            href="mailto:zouiche.omar@gmail.com?subject = Feedback&body = Message"
-            target="blank"
           >
             <span>
               <ExtLink className="h-[1.7rem]" />

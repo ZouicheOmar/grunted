@@ -35,7 +35,7 @@ const ProjectsSection = () => {
         </p>
       </div>
 
-      <div className="basierFont light:text-neutral-900 dark:text-white mt-[1rem] border-b-0 pb-2 ">
+      <div className="basierFont light:text-neutral-900 dark:text-white mt-[1rem] border-b-[1px] border-b-neutral-500 pb-[2rem] ">
         <span className="text-xl light:text-neutral-900 dark:text-white formaDJR font-[500] ">
           Data optimisation and Mathematical Models
         </span>
@@ -70,12 +70,26 @@ const ProjectsSection = () => {
           Stack : HTML, CSS, Javascript, Python, FreeFEM, C++
         </p>
       </div>
+
+      <div className="basierFont light:text-neutral-900 dark:text-white mt-[1rem] border-b-0 pb-2 ">
+        <span className="text-xl light:text-neutral-900 dark:text-white formaDJR font-[500] ">
+          Experiments & Other Projects
+        </span>
+        <br />
+        <div className="flex">
+          Other quick projects and personal experiments can be found on my&nbsp;
+          <a
+            href="https://github.com/ZouicheOmar"
+            target="blank"
+            className="flex cursor-pointer hover:underline hover:underline-offset-2  gap-1 w-fit items-center"
+          >
+            Github
+            <GithubIcon className="h-[1.2rem]" />
+          </a>
+        </div>
+      </div>
     </div>
   )
 }
 
 export default ProjectsSection
-
-{
-  /* Data optimisation and Mathematical Models */
-}
