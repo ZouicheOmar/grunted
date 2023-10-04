@@ -82,7 +82,7 @@ const SideMenu = () => {
       <div
         className={`${
           open ? 'left-[-50vw]' : 'left-[50vw]'
-        } absolute z-10 w-[55vw] h-[100vh] top-0 text-xl bg-indigo-950 flex flex-col justify-between transition-all duration-[500ms] ease-in-out`}
+        } absolute 	 w-[55vw] h-[100vh] top-0 text-xl bg-indigo-950 flex flex-col justify-between transition-all duration-[500ms] ease-in-out`}
       >
         <div className="flex flex-col gap-6 ">
           <p
@@ -305,7 +305,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="fixed z-10 md:hidden ml-0 mr-0 top-0 left-0 min-w-full text-[yellow] h-[4rem] py-4 px-2 bg-indigo-950 flex justify-between">
+      <div className="fixed  z-20 md:hidden ml-0 mr-0 top-0 left-0 min-w-full text-[yellow] h-[4rem] py-4 px-2 bg-indigo-950 flex justify-between">
         <span
           className="cursor-pointer text-2xl font-bold jetBrains hover:underline hover:underline-offset-4"
           onClick={handleGoTop}

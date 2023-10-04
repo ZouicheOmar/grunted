@@ -22,32 +22,31 @@ const HeroSection = () => {
       >
         <div className="z-10 w-fit h-fit flex flex-col justify-center rounded p-2">
           <span className="formatDJR text-2xl">Hello, Bonjour, مرحباً</span>
-          <span className="title text-5xl">My name is Omar Zouiche</span>
+          <span className="title text-5xl">Omar Zouiche</span>
           <span className="basierFont font-[500] text-xl w-1/2 leading-tight">
-            A Frontend developper, ex math student who lately got obssessed on
-            creating magic by typing logic on his computer, based in France
+            A Frontend Developer, graduate in Mathematics, interested in App
+            Design and User Experience, Constant learner, currently based in
+            France
           </span>
-          <span className="formaDJR text-xl w-1/2 leading-tight">
+          {/* <span className="formaDJR text-xl w-1/2 leading-tight">
             Currently at Erasmus Internation Network
-          </span>
+          </span> */}
           <div className="flex gap-3">
-            <div className="cursor-pointer flex items-end  w-fit p-1 px-2 rounded ">
-              <GithubIcon className="w-[2rem]" />
-              <span className="title text-lg">Github</span>
+            <div className="cursor-pointer flex items-end gap-1  w-fit p-1 px-2 rounded ">
+              <GithubIcon className="w-[1.8rem] stroke-[1.5px]" />
+              <span className="formaDJR text-lg">Github</span>
             </div>
             <div className="cursor-pointer flex items-end gap-1  w-fit p-1 px-2 rounded ">
-              <MailIcon className="w-[2rem]" />
-              <span className="formaDJR font-semibold text-lg">
-                zouiche.omar@gmail.com
-              </span>
+              <MailIcon className="w-[2rem] stroke-[1.5px]" />
+              <span className="formaDJR  text-lg">zouiche.omar@gmail.com</span>
             </div>
             <div className="flex items-end gap-1  w-fit p-1 px-2 rounded cursor-pointer ">
-              <LinkedInIcon className="w-[2rem]" />
-              <span className="formaDJR font-semibold text-lg">LinkedIn</span>
+              <LinkedInIcon className="w-[2rem] stroke-[1.5px]" />
+              <span className="formaDJR text-lg">LinkedIn</span>
             </div>
           </div>
         </div>
-        <div className="absolute w-full h-full mix-blend-luminosity border-white top-0 left-0 z-0">
+        <div className="absolute w-full h-full mix-blend- border-white top-0 left-0 z-0">
           <img src="./twareg.png" />
         </div>
       </div>
@@ -56,7 +55,7 @@ const HeroSection = () => {
         id="mobile_hero"
         className="relative h-[80vh] md:hidden flex flex-col justify-center basierFont mt-[5rem] w-full"
       >
-        <div className=" z-10  h-fit flex flex-col justify-center rounded ">
+        <div className="z-10 h-fit flex flex-col justify-center rounded ">
           {/* <span className="formatDJR text-2xl">Hello, Bonjour, مرحباً</span> */}
           <span className="title text-5xl">Omar Zouiche</span>
           {/* <span className=" font-[500] text-xl leading-tight">
@@ -66,7 +65,9 @@ const HeroSection = () => {
             Currently at Erasmus Internation Network
           </span> */}
           <span className=" font-[500] text-xl leading-tight">
-            A FrontEnd developer, mathematics enthousiat, based in France
+            A Frontend Developer, graduate in Mathematics, interested in App
+            Design and User Experience, Constant learner, currently based in
+            France{' '}
             {/* <br />
             Currently at Erasmus Internation Network */}
           </span>

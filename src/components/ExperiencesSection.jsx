@@ -15,21 +15,22 @@ const ExperiencesSection = () => {
       <div className="basierFont light:text-neutral-900 dark:text-white mt-[0.5rem] border-b-[1px] border-b-neutral-500 pb-2 ">
         <div>
           <span className="text-xl light:text-neutral-900 dark:text-white formaDJR font-[500] ">
-            Fullstack Developer : Erasmus Internation Network{' '}
+            Fullstack Developer @ Erasmus Internation Network{' '}
             <span className="jetBrains text-sm text-orange-500">(Current)</span>
           </span>
           <br />
-          <div className="leading-tight py-2 pl-2 text-neutral-">
-            job description
-            <br />
-            Tasks
-            <br />
-            Task 1 : Task description, Communicatig with design and marketing
-            team etc
-            <br />
-            Task 2
-            <br />
-            Task 2
+          <div className="leading-tight py-2 pl-1 md:pl-2 basierFont">
+            <ul className="list-disc list-inside">
+              <li>Developping and maintaining a responsive web app</li>
+              <li>
+                Designing and implementing interactive features to enhance user
+                engagement
+              </li>
+              <li>Impleting user authentification features</li>
+              <li>Maintaining products and user databases</li>
+              <li>Managing hosting and maitntenance</li>
+              <li>Constantly improving and adding features and app design</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -37,24 +38,31 @@ const ExperiencesSection = () => {
         <p className="formaDJR font-bold text-2xl">Education</p>
         <div className="basierFont">
           <ul className="list-disc list-inside">
-            <li className="">Master 1 in Models and Numerical Analysis</li>
-            <ul className="pl-4 text-slate-400 list-disc list-inside leading-tight">
-              <li>Mathematical models in freemfem</li>
+            {/* <li className=""> */}
+            <span className="text-lg ">
+              Masters 1 in Mathematical Models and Numerical Analysis
+            </span>
+            {/* <br />
+            <span className=" text-slate-300">
+              Programming relevant courses :
+            </span> */}
+            {/* </li> */}
+            <ul className="pl-4 pt-1 pb-2 text-slate-300 list-disc list-inside leading-tight">
               <li>Object Oriented Programming in C++</li>
+              <li>Data Analysis & Functionnal Optimization</li>
+              <li>Mathematical Models & Equations using FreeFEM</li>
+            </ul>
+            <span className="text-lg ">Mathematics Degree</span>
+            <ul className="pl-4 pt-1 pb-2 text-slate-300 list-disc list-inside leading-tight">
+              <li>Mathematical Optimization using Python </li>
               <li>Numerical Analysis</li>
-              <li>Data Analysis and Optimisation</li>
             </ul>
-            <li className="">Mathematics Degree</li>
-            <ul className="pl-4 text-slate-400 list-disc list-inside leading-tight">
-              <li>Program relevant for programming</li>
-              <li>Description</li>
-              <li>Description</li>
-            </ul>
-            <li className="">Technology and Engeneering Sciences school</li>
-            <ul className="pl-4 text-slate-400 list-disc list-inside leading-tight">
-              <li>Program relevant for programming</li>
-              <li>Description</li>
-              <li>Description</li>
+            <span className="text-lg ">
+              Technology & Engeneering Sciences School
+            </span>
+            <ul className="pl-4 pt-1 pb-2 text-slate-300 list-disc list-inside leading-tight">
+              <li>Programming in Python</li>
+              <li>Matlab & Arduino, AutoCAD design</li>
             </ul>
           </ul>
         </div>

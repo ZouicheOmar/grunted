@@ -1,6 +1,7 @@
 /** @format */
 import {useEffect} from 'react'
 import fadeInView from '../functions/animations/fadeInView'
+import {GithubIcon, ExtLink} from '../assets/icons'
 
 const ProjectsSection = () => {
   useEffect(() => {
@@ -8,62 +9,65 @@ const ProjectsSection = () => {
   })
   return (
     <div
-      className=" w-full rounded md:px-[5%] pt-[5rem] flex flex-col gap-2 h-fit "
+      className=" w-full rounded md:px-[5%] pt-[5rem]  flex flex-col gap-2 h-fit cursor-default"
       id="projects"
     >
       <p className="formaDJR font-bold text-5xl leading-tight">Projects</p>
-      <div className="basierFont light:text-neutral-900 mt-[0.5rem] dark:text-white border-b-[1px] border-b-neutral-500 pb-2 ">
+      <div className="basierFont light:text-neutral-900 mt-[0.5rem]  dark:text-white border-b-[1px] border-b-neutral-500 pb-[2rem] ">
         <span className="text-xl light:text-neutral-900 dark:text-white formaDJR font-[500] ">
-          Web development; Erasmus Internation Network{' '}
-          <span className="jetBrains text-sm text-orange-500">(Current)</span>
+          Web Development for Erasmus Internation Network{' '}
+          <span className="jetBrains text-sm flex text-orange-500">
+            (Current)
+            <a href="https://github.com/ZouicheOmar/abroad-vite" target="blank">
+              <GithubIcon className="pl-2 h-[1.2rem] inline stroke-white hover:cursor-pointer" />
+            </a>
+          </span>
         </span>
-        <br />
-        <p className="text-lg leading-tight py-2 pl-2 text-neutral-">
-          <span className="formaDJR font-[500] ">Role :</span>
-          <br />
-          <span>Frontend Developpement</span>
-          <br />
-          <span>Backend Development</span>
-          <br />
-          <span>Involved in visual identity and branding</span>
-          <br />
+        <p className="pt-2">
+          A responsive website for Erasmus students to interact with EIN,
+          Implemeting a user authentification system, product (events) listing,
+          payment system, deployment and maintenance
         </p>
-        <span>What's involved in the project ? </span>
-        <br />
-        <p>
-          PROJECT DESCRIPTION : Enim in pariatur officia labore elit. Ad
-          proident magna aliqua consectetur ut laboris est esse anim. Laboris
-          eiusmod non cillum elit irure ut eu eiusmod exercitation nisi. Velit
-          occaecat irure ea anim. Ut duis nulla cupidatat reprehenderit sunt
-          excepteur. Velit dolore labore nostrud cupidatat quis. Irure aliquip
-          Lorem deserunt aute dolor mollit ut Lorem.
+        <p className="pt-1 leading-tight text-slate-300">
+          {' '}
+          Stack : React.js, TailwindCSS, RadixUI, Node.js, Supabase, PostgreSQL,
+          Vercel
         </p>
       </div>
 
-      <div className="basierFont light:text-neutral-900 dark:text-white mt-[2rem] border-b-0 pb-2 ">
+      <div className="basierFont light:text-neutral-900 dark:text-white mt-[1rem] border-b-0 pb-2 ">
         <span className="text-xl light:text-neutral-900 dark:text-white formaDJR font-[500] ">
           Data optimisation and Mathematical Models
         </span>
         <br />
-        <p className="text-lg leading-tight py-2 pl-2 text-neutral-">
-          <span className="formaDJR font-[500] ">Role :</span>
-          <br />
-          <span>Frontend Developpement</span>
-          <br />
-          <span>Backend Development</span>
-          <br />
-          <span>Backend Development</span>
-          <br />
-          <span>Involved in visual identity and branding</span>
-          <br />
+        <a
+          href="https://github.com/ZouicheOmar/C-and-Freefem-files-Masters-1-MANU-"
+          target="blank"
+          className="flex gap-2 w-fit items-center cursor-pointer"
+        >
+          <GithubIcon className="h-[1.2rem]" />
+          <span className="hover:underline hover:underline-offset-2">
+            Mathematical Models
+          </span>
+        </a>
+        <a
+          href="https://zouicheomar.github.io/project21808112.github.io/"
+          target="blank"
+          className="flex gap-2 items-center cursor-pointer w-fit"
+        >
+          <GithubIcon className="h-[1.2rem]" />
+          <span className="hover:underline hover:underline-offset-2">
+            Data Optimization
+          </span>
+        </a>
+        <p className="pt-2">
+          A set of projects and studies done during Mathematics study involving
+          data analysis & optimization, solving mathematical models using
+          Python, where I dived deeply in pure programming
         </p>
-        <p>
-          Enim in pariatur officia labore elit. Ad proident magna aliqua
-          consectetur ut laboris est esse anim. Laboris eiusmod non cillum elit
-          irure ut eu eiusmod exercitation nisi. Velit occaecat irure ea anim.
-          Ut duis nulla cupidatat reprehenderit sunt excepteur. Velit dolore
-          labore nostrud cupidatat quis. Irure aliquip Lorem deserunt aute dolor
-          mollit ut Lorem.
+        <p className="pt-1 leading-tight text-slate-300">
+          {' '}
+          Stack : HTML, CSS, Javascript, Python, FreeFEM, C++
         </p>
       </div>
     </div>

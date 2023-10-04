@@ -56,13 +56,12 @@ const SkillsSection = () => {
         </div>{' '}
         <div className="md:w-1/4 w-[47%] sm:w-5/12 md:border-r-[1px]  flex flex-col items-start gap-2 p-2  md:border-r-neutral-700">
           <span className="formaDJR font-bold text-xl md:text-2xl">
-            Tools and others
+            Tools & Others
           </span>
           <div className="w-full flex flex-col pb-[1rem] items-start gap-1 leading-tight">
             <span>Git / Github</span>
             <span>Vercel</span>
-            <span>Firebase</span>
-            <span>Supabase</span>
+            <span>Firebase / Supabase</span>
             <span>MongoDB</span>
             <span>Linux</span>
             <span>NeoVim</span>
@@ -71,7 +70,7 @@ const SkillsSection = () => {
       </div>
       <div className="mt-[1rem] md:text-lg flex flex-col gap-2  pl-[8% md:pl-[1%]  rounded p-2">
         <span className="formaDJR font-bold text-xl md:text-2xl">
-          Principles and methods
+          Principles & Methods
         </span>
         <div className="leading-tight flex flex-col pb-[1rem] items-start gap-1">
           <span>Test driven Developpement</span>

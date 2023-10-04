@@ -1,13 +1,14 @@
 /** @format */
+
 @import url('https://fonts.cdnfonts.com/css/forma-djr-banner');
 @import url('https://fonts.cdnfonts.com/css/reddit-sans');
 @import url('https://fonts.cdnfonts.com/css/basier');
 @import url('https://fonts.cdnfonts.com/css/jetbrains-mono');
+@import url('https://fonts.cdnfonts.com/css/mac-sans');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   /* line-height: 1.5; */
@@ -111,4 +112,8 @@ button:focus-visible {
 
 .jetBrains {
   font-family: 'JetBrains Mono', sans-serif;
+}
+
+.macSans {
+  font-family: 'Mac Sans', sans-serif;
 }
