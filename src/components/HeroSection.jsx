@@ -46,7 +46,7 @@ const HeroSection = () => {
         <div className="absolute w-full h-full mix-blend- border-white top-0 left-0 z-0">
           <img
             src="./twareg.png"
-            className="object-cover object-right-bottom h-full opacity-60"
+            className="object-cover object-right-bottom h-full opacity-10"
           />
         </div>
       </div>
