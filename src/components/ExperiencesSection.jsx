@@ -8,20 +8,20 @@ const ExperiencesSection = () => {
   })
   return (
     <div
-      className=" w-full rounded  md:px-[5%] pt-[5rem] flex flex-col gap-2 h-fit"
+      className="generalFont w-full rounded  md:px-[5%] pt-[5rem] flex flex-col gap-2 h-fit"
       id="experiences"
     >
-      <p className="formaDJR font-bold text-5xl">Experiences</p>
+      <p className=" font-medium text-5xl">Experiences</p>
       <div className="basierFont light:text-neutral-900 dark:text-white mt-[0.5rem] border-b-[1px] border-b-neutral-500 pb-2 ">
         <div>
-          <span className="text-xl light:text-neutral-900 dark:text-white formaDJR font-[500] ">
+          <span className="text-xl light:text-neutral-900 dark:text-white ">
             Fullstack Developer @ Erasmus Internation Network <br />
             <span className="jetBrains text-sm text-orange-500">
               (to Dec. 2023)
             </span>
           </span>
           <br />
-          <div className="leading-tight py-2 pl-1 md:pl-2 basierFont">
+          <div className="leading-tight py-2 pl-1 md:pl-2 ">
             <ul className="list-disc list-inside">
               <li>Developping and maintaining a responsive web app</li>
               <li>
@@ -37,7 +37,7 @@ const ExperiencesSection = () => {
         </div>
       </div>
       <div className="mt-[2rem]">
-        <p className="formaDJR font-bold text-2xl">Education</p>
+        <p className=" font-medium text-3xl">Education</p>
         <div className="basierFont">
           <ul className="list-disc list-inside">
             <span className="text-lg ">

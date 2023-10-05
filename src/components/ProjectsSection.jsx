@@ -9,13 +9,13 @@ const ProjectsSection = () => {
   })
   return (
     <div
-      className="relative w-full rounded  md:px-[5%] pt-[5rem]  flex flex-col gap-2 h-fit cursor-default"
+      className="relative generalFont w-full rounded  md:px-[5%] pt-[5rem]  flex flex-col gap-2 h-fit cursor-default"
       id="projects"
     >
-      <p className="formaDJR font-bold text-5xl leading-tight">Projects</p>
-      <div className="z-10 basierFont light:text-neutral-900 mt-[0.5rem]  dark:text-white border-b-[1px] border-b-neutral-500 pb-[2rem] ">
-        <span className="text-xl light:text-neutral-900 dark:text-white formaDJR font-[500] ">
-          Web Development for Erasmus Internation Network{' '}
+      <p className="generalFont font-medium text-5xl leading-tight">Projects</p>
+      <div className="z-10 generalFont light:text-neutral-900 mt-[0.5rem]  dark:text-white border-b-[1px] border-b-neutral-500 pb-[2rem] ">
+        <span className="text-xl light:text-neutral-900 dark:text-white  font-medium ">
+          Abroad{' '}
           <span className="jetBrains text-sm flex text-orange-500">
             (Current)
             <a href="https://github.com/ZouicheOmar/abroad-vite" target="blank">
@@ -35,8 +35,8 @@ const ProjectsSection = () => {
         </p>
       </div>
 
-      <div className="z-10 basierFont light:text-neutral-900 dark:text-white mt-[1rem] border-b-[1px] border-b-neutral-500 pb-[2rem] ">
-        <span className="text-xl light:text-neutral-900 dark:text-white formaDJR font-[500] ">
+      <div className="z-10 generalFont light:text-neutral-900 dark:text-white mt-[1rem] border-b-[1px] border-b-neutral-500 pb-[2rem] ">
+        <span className="text-xl light:text-neutral-900 dark:text-white  font-medium ">
           Data optimisation and Mathematical Models
         </span>
         <br />
@@ -71,8 +71,8 @@ const ProjectsSection = () => {
         </p>
       </div>
 
-      <div className="z-10 basierFont light:text-neutral-900 dark:text-white mt-[1rem] border-b-0 pb-2 ">
-        <span className="text-xl light:text-neutral-900 dark:text-white formaDJR font-[500] ">
+      <div className="z-10  light:text-neutral-900 dark:text-white mt-[1rem] border-b-0 pb-2 ">
+        <span className="text-xl light:text-neutral-900 dark:text-white  font-medium ">
           Experiments & Other Projects
         </span>
         <br />
