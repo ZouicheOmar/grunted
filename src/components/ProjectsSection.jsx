@@ -9,7 +9,7 @@ const ProjectsSection = () => {
   })
   return (
     <div
-      className="relative generalFont w-full rounded  md:px-[5%] pt-[5rem]  flex flex-col gap-2 h-fit cursor-default"
+      className="relative generalFont w-full rounded  md:px-[5%] pt-[5rem] md:pt-[2rem]  flex flex-col gap-2 h-fit cursor-default"
       id="projects"
     >
       <p className="generalFont font-medium text-5xl leading-tight">Projects</p>
@@ -24,14 +24,14 @@ const ProjectsSection = () => {
           </span>
         </span>
         <p className="pt-2">
-          A responsive website for Erasmus students to interact with EIN,
-          Implemeting a user authentification system, product (events) listing,
-          payment system, deployment and maintenance
+          A plateform for International Students in Geneva and Lausanne to
+          connect. Implemeting a user authentification system, events (product)
+          listing, payment system, deployment and maintenance.
         </p>
         <p className="pt-1 leading-tight text-neutral-500 dark:text-slate-300">
           {' '}
           Stack : React.js, TailwindCSS, RadixUI, Node.js, Supabase, PostgreSQL,
-          Vercel
+          Vercel.
         </p>
       </div>
 
@@ -62,8 +62,8 @@ const ProjectsSection = () => {
         </a>
         <p className="pt-2">
           A set of projects and studies done during Mathematics study involving
-          data analysis & optimization, solving mathematical models using
-          Python, where I dived deeply in pure programming
+          data analysis & optimization, mathematical models using Python, where
+          I deeply dived in programming.
         </p>
         <p className="pt-1 leading-tight text-neutral-500 dark:text-slate-300">
           {' '}

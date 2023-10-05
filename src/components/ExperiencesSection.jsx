@@ -8,7 +8,7 @@ const ExperiencesSection = () => {
   })
   return (
     <div
-      className="generalFont w-full rounded  md:px-[5%] pt-[5rem] flex flex-col gap-2 h-fit"
+      className="generalFont w-full rounded  md:px-[5%] pt-[5rem] md:pt-[2rem] flex flex-col gap-2 h-fit"
       id="experiences"
     >
       <p className=" font-medium text-5xl">Experiences</p>

@@ -11,7 +11,7 @@ const ContactSection = () => {
   return (
     <>
       <div
-        className="generalFont w-full h-screen rounded md:px-[5%] pt-[5rem] flex flex-col gap-2 "
+        className="generalFont w-full h-screen rounded md:px-[5%] pt-[5rem] md:pt-[2rem] flex flex-col gap-2 "
         id="contact"
       >
         <p className=" font-medium text-5xl">Subjet & Contact</p>

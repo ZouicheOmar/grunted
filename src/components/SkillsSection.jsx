@@ -17,7 +17,7 @@ const SkillsSection = () => {
   }, [])
   return (
     <div
-      className="generalFont w-full md:px-[5%]  pt-[5rem] flex flex-col justify-center gap-2 h-fit "
+      className="generalFont w-full md:px-[5%] md:pt-[2rem] pt-[5rem] flex flex-col justify-center gap-2 h-fit "
       id="skills"
     >
       <p className=" font-medium text-5xl">Skills</p>
