@@ -20,10 +20,9 @@ const HeroSection = () => {
         className="relative hidden w-full h-screen md:grid place-content-center place-items-center rounded p-2"
         id="hero"
       >
-        <div className="z-10 w-fit h-fit flex flex-col justify-center rounded p-2">
-          {/* <span className="formatDJR text-2xl">Hello, Bonjour, مرحباً</span> */}
-          <span className="title text-5xl">Omar Zouiche</span>
-          <span className="dark:basierFont formaDJR font-bold dark:font-[500] text-xl w-1/2 leading-tight">
+        <div className="generalFont z-10 w-fit h-fit flex flex-col justify-center rounded p-2">
+          <h1 className="font-medium text-7xl">Omar Zouiche</h1>
+          <span className="  text-2xl w-3/4 leading-tight">
             A Frontend Developer, graduate in Mathematics, interested in App
             Design and User Experience, Constant learner, currently based in
             France
@@ -42,6 +41,12 @@ const HeroSection = () => {
               <span className="formaDJR text-lg">LinkedIn</span>
             </div>
           </div>
+          <span
+            className="absolute cursor-pointer bottom-[20%] right-[1rem]"
+            onClick={handleArrowDown}
+          >
+            <ArrowUp className="rotate-180 scale-150" />
+          </span>
         </div>
         <div className="absolute w-full h-full mix-blend- border-white top-0 left-0 z-0">
           <img
@@ -53,12 +58,12 @@ const HeroSection = () => {
 
       <div
         id="mobile_hero"
-        className="relative md:h-[80vh] h-screen  md:hidden flex flex-col justify-center basierFont mt-[5rem] w-full"
+        className="relative md:h-[80vh] h-screen generalFont md:hidden flex flex-col justify-center basierFont mt-[5rem] w-full"
       >
         <div className="z-10 h-fit flex flex-col justify-center rounded ">
-          <span className="title text-5xl">Omar Zouiche</span>
+          <h1 className="font-semibold ">Omar Zouiche</h1>
 
-          <span className="dark:basierFont formaDJR font-[500] dark:font-[500]  text-xl leading-tight">
+          <span className="text-xl leading-tight">
             A Frontend Developer, graduate in Mathematics, interested in App
             Design and User Experience, Constant learner, currently based in
             France{' '}
@@ -101,7 +106,7 @@ const HeroSection = () => {
         <div className="absolute w-full h-5/6 mixblend-luminosity top-0 left-0 z-0">
           <img
             src="./twareg.png"
-            className="object-cover opacity-30 object-right-bottom h-full dark:opacity-60 "
+            className="object-cover opacity-30 object-right-bottom h-full dark:opacity-10 "
           />
         </div>
       </div>
