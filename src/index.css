@@ -1,13 +1,14 @@
 /** @format */
 
-@import url('https://fonts.cdnfonts.com/css/forma-djr-banner');
-@import url('https://fonts.cdnfonts.com/css/reddit-sans');
-@import url('https://fonts.cdnfonts.com/css/basier');
-@import url('https://fonts.cdnfonts.com/css/jetbrains-mono');
-@import url('https://fonts.cdnfonts.com/css/mac-sans');
-@import url('https://fonts.cdnfonts.com/css/general-sans');
+@import url("https://fonts.cdnfonts.com/css/forma-djr-banner");
+@import url("https://fonts.cdnfonts.com/css/reddit-sans");
+@import url("https://fonts.cdnfonts.com/css/basier");
+@import url("https://fonts.cdnfonts.com/css/jetbrains-mono");
+@import url("https://fonts.cdnfonts.com/css/mac-sans");
+@import url("https://fonts.cdnfonts.com/css/general-sans");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
 
-@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inconsolata:wght@500;600&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inconsolata:wght@500;600&family=VT323&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -75,7 +76,7 @@ button:focus-visible {
 }
 
 .title {
-  font-family: 'Forma DJR Banner', sans-serif;
+  font-family: "Forma DJR Banner", sans-serif;
   font-weight: 700;
   /* font-size: 3rem; */
   /* max-width: fit-content; */
@@ -85,7 +86,7 @@ button:focus-visible {
   position: absolute;
   /* font-family: 'Forma DJR Banner', sans-serif; */
   /* font-family: 'Fragment Mono', monospace; */
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   /* font-family: 'VT323', monospace; */
   font-weight: 600;
   font-size: 2rem;
@@ -101,39 +102,43 @@ button:focus-visible {
 }
 
 .formaDJR {
-  font-family: 'Forma DJR Text', sans-serif;
+  font-family: "Forma DJR Text", sans-serif;
 }
 
 .navbar {
-  font-family: 'Forma DJR Text', sans-serif;
+  font-family: "Forma DJR Text", sans-serif;
 }
 
 .redditFont {
-  font-family: 'Reddit Sans', sans-serif;
+  font-family: "Reddit Sans", sans-serif;
 }
 
 .basierFont {
-  font-family: 'Basier Square', sans-serif;
+  font-family: "Basier Square", sans-serif;
 }
 
 .jetBrains {
-  font-family: 'JetBrains Mono', sans-serif;
+  font-family: "JetBrains Mono", sans-serif;
 }
 
 .macSans {
-  font-family: 'Mac Sans', sans-serif;
+  font-family: "Mac Sans", sans-serif;
 }
 
 .fragMono {
-  font-family: 'Fragment Mono', monospace;
+  font-family: "Fragment Mono", monospace;
 }
 .solata {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 .vt323 {
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
 }
 
 .generalFont {
-  font-family: 'General Sans', sans-serif;
+  font-family: "General Sans", sans-serif;
+}
+
+.SF {
+  font-family: "SF Pro Display", sans-serif;
 }

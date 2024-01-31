@@ -1,11 +1,11 @@
 /** @format */
 
-import HeroSection from '../components/HeroSection'
-import SkillsSection from '../components/SkillsSection'
-import ProjectsSection from '../components/ProjectsSection'
-import ExperiencesSection from '../components/ExperiencesSection'
-import ContactSection from '../components/ContactSection'
-import Footer from '../components/Footer'
+import HeroSection from "../components/HeroSection"
+import SkillsSection from "../components/SkillsSection"
+import ProjectsSection from "../components/ProjectsSection"
+import ExperiencesSection from "../components/ExperiencesSection"
+import ContactSection from "../components/ContactSection"
+import Footer from "../components/Footer"
 
 const HomePage = () => {
   return (

@@ -1,10 +1,10 @@
 /** @format */
-import {useEffect} from 'react'
-import fadeInView from '../functions/animations/fadeInView'
+import {useEffect} from "react"
+import fadeInView from "../functions/animations/fadeInView"
 
 const ExperiencesSection = () => {
   useEffect(() => {
-    fadeInView('#experiences')
+    fadeInView("#experiences")
   })
   return (
     <div

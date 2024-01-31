@@ -1,11 +1,11 @@
 /** @format */
-import {useEffect} from 'react'
-import fadeInView from '../functions/animations/fadeInView'
-import {GithubIcon, ExtLink} from '../assets/icons'
+import {useEffect} from "react"
+import fadeInView from "../functions/animations/fadeInView"
+import {GithubIcon} from "../assets/icons"
 
 const ProjectsSection = () => {
   useEffect(() => {
-    fadeInView('#projects')
+    fadeInView("#projects")
   })
   return (
     <div
@@ -15,7 +15,7 @@ const ProjectsSection = () => {
       <p className="generalFont font-medium text-5xl leading-tight">Projects</p>
       <div className="z-10 generalFont light:text-neutral-900 mt-[0.5rem]  dark:text-white border-b-[1px] border-b-neutral-500 pb-[2rem] ">
         <span className="text-xl light:text-neutral-900 dark:text-white  font-medium ">
-          Abroad{' '}
+          Abroad{" "}
           <span className="jetBrains text-sm flex text-orange-500">
             (Current)
             <a href="https://github.com/ZouicheOmar/abroad-vite" target="blank">
@@ -29,7 +29,7 @@ const ProjectsSection = () => {
           listing, payment system, deployment and maintenance.
         </p>
         <p className="pt-1 leading-tight text-neutral-500 dark:text-slate-300">
-          {' '}
+          {" "}
           Stack : React.js, TailwindCSS, RadixUI, Node.js, Supabase, PostgreSQL,
           Vercel.
         </p>
@@ -66,7 +66,7 @@ const ProjectsSection = () => {
           I deeply dived in programming.
         </p>
         <p className="pt-1 leading-tight text-neutral-500 dark:text-slate-300">
-          {' '}
+          {" "}
           Stack : HTML, CSS, Javascript, Python, FreeFEM, C++
         </p>
       </div>
@@ -77,7 +77,7 @@ const ProjectsSection = () => {
         </span>
         <br />
         <p>
-          Other quick projects and personal experiments can be found on my{' '}
+          Other quick projects and personal experiments can be found on my{" "}
           <span className="cursor-pointer hover:underline hover:underline-offset-2  gap-1 w-fit items-center">
             <a href="https://github.com/ZouicheOmar" target="blank">
               Github

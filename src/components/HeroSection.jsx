@@ -1,23 +1,23 @@
 /** @format */
-import {useEffect} from 'react'
-import fadeInView from '../functions/animations/fadeInView'
-import {ArrowUp} from '../assets/icons'
+import {useEffect} from "react"
+import fadeInView from "../functions/animations/fadeInView"
+import {ArrowUp} from "../assets/icons"
 
-import {GithubIcon, MailIcon, LinkedInIcon} from '../assets/icons'
+import {GithubIcon, MailIcon, LinkedInIcon} from "../assets/icons"
 
 const HeroSection = () => {
   const handleArrowDown = () => {
-    const element = document.getElementById('skills')
-    element.scrollIntoView({behavior: 'smooth', inline: 'start'})
+    const element = document.getElementById("skills")
+    element.scrollIntoView({behavior: "smooth", inline: "start"})
   }
   useEffect(() => {
-    fadeInView('#hero')
-    fadeInView('#mobile_hero')
+    fadeInView("#hero")
+    fadeInView("#mobile_hero")
   })
   return (
     <>
       <div
-        className="relative hidden w-full h-screen md:grid place-content-center place-items-center rounded p-2"
+        className="relative w-full h-screen md:grid place-content-center place-items-center rounded p-2"
         id="hero"
       >
         <div className="generalFont z-10 w-fit h-fit flex flex-col justify-center rounded p-2">
@@ -66,7 +66,7 @@ const HeroSection = () => {
           <span className="text-xl leading-tight">
             A Frontend Developer, graduate in Mathematics, interested in App
             Design and User Experience, Constant learner, currently based in
-            France{' '}
+            France{" "}
           </span>
           <div className="flex flex-wrap gap-x-10 gap-y-2 mt-6 ml2 ">
             <a
@@ -74,7 +74,7 @@ const HeroSection = () => {
               target="blank"
               className="cursor-pointer flex items-center rounded "
             >
-              {' '}
+              {" "}
               <GithubIcon className="w-[1.7rem]" />
               <span className=" ">Github</span>
             </a>

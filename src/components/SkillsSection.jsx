@@ -1,7 +1,7 @@
 /** @format */
-import {useEffect} from 'react'
-import fadeInView from '../functions/animations/fadeInView'
-import toolsIcon from '../assets/tools.svg'
+import {useEffect} from "react"
+import fadeInView from "../functions/animations/fadeInView"
+import toolsIcon from "../assets/tools.svg"
 import {
   BrushIcon,
   CogIcon,
@@ -9,11 +9,11 @@ import {
   DatabaseIcon,
   ThinkingIcon,
   ToolsIcon,
-} from '../assets/icons'
+} from "../assets/icons"
 
 const SkillsSection = () => {
   useEffect(() => {
-    fadeInView('#skills')
+    fadeInView("#skills")
   }, [])
   return (
     <div
@@ -96,7 +96,7 @@ const SkillsSection = () => {
             src={toolsIcon}
             className="bottom-[25%] right-[25%] scale-[900%] absolute stroke-1 stroke-stone-950 opacity-40"
           />
-        </div>{' '}
+        </div>{" "}
         <div className="relative overflow-hidden  flex-grow lg:w-1/4 md:p-4 px-3 py-2 w-[47%] sm:w-5/12 flex flex-col items-start gap-4 border-r-[1px] rounded-xl border-neutral-700 border-[1px]  bg-gradient-to-t from-[#8641e5] to-[#242424]   ">
           <span className="z-10 font-medium text-xl lg:text-2xl">Design</span>
           <div className="z-10 flex flex-col gap-2 pb-5 pl-[5%] md:text-base w-full  justify-start items-start leading-tight">
@@ -108,7 +108,7 @@ const SkillsSection = () => {
             src={toolsIcon}
             className="bottom-[25%] right-[25%] scale-[900%] absolute stroke-1 stroke-stone-950 opacity-40"
           />
-        </div>{' '}
+        </div>{" "}
         <div className="relative overflow-hidden flex-grow lg:w-1/4 md:p-4 px-3 py-2 w-[47%] sm:w-5/12 flex flex-col items-start gap-4 border-r-[1px] rounded-xl border-neutral-700 border-[1px]  bg-gradient-to-t from-red-950 to-[#242424]   ">
           <span className="z-10 font-medium text-xl lg:text-2xl">
             Tools & Others

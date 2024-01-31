@@ -1,12 +1,12 @@
 /** @format */
-import {useEffect} from 'react'
-import fadeInView from '../functions/animations/fadeInView'
-import {GithubIcon, MailIcon, LinkedInIcon, ExtLink} from '../assets/icons'
-import pdf from '../assets/CV-ZOUICHE.pdf'
+import {useEffect} from "react"
+import fadeInView from "../functions/animations/fadeInView"
+import {GithubIcon, MailIcon, LinkedInIcon, ExtLink} from "../assets/icons"
+import pdf from "../assets/CV-ZOUICHE.pdf"
 
 const ContactSection = () => {
   useEffect(() => {
-    fadeInView('#contact')
+    fadeInView("#contact")
   })
   return (
     <>
