@@ -1,6 +1,9 @@
 /** @format */
 import {useEffect} from "react"
 import fadeInView from "../functions/animations/fadeInView"
+
+import {Title} from "./Title"
+
 import toolsIcon from "../assets/tools.svg"
 import {
   BrushIcon,
@@ -103,7 +106,7 @@ const SkillsSection = () => {
       className="generalFont w-full md:px-[5%] md:pt-[2rem] pt-[5rem] flex flex-col justify-center gap-2 h-fit "
       id="skills"
     >
-      <p className=" font-medium text-5xl">Skills</p>
+      <Title value="Skills" />
       <div className="w-full  font-medium flex md:text-xl flex-wrap  justify-center mt-[0.5rem] gap-2 md:gap-4 ">
         <FrontEnd />
         <Backend />

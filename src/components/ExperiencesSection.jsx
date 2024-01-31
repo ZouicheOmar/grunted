@@ -1,6 +1,9 @@
 /** @format */
 import {useEffect} from "react"
+
 import fadeInView from "../functions/animations/fadeInView"
+
+import {Title} from "./Title"
 
 const ExperiencesSection = () => {
   useEffect(() => {
@@ -11,13 +14,13 @@ const ExperiencesSection = () => {
       className="generalFont w-full rounded  md:px-[5%] pt-[5rem] md:pt-[2rem] flex flex-col gap-2 h-fit"
       id="experiences"
     >
-      <p className=" font-medium text-5xl">Experiences</p>
+      <Title value="Experiences" />
       <div className="light:text-neutral-900 dark:text-white mt-[0.5rem] border-b-[1px] border-b-neutral-500 pb-6 ">
         <div>
           <span className="text-xl leading-none light:text-neutral-900 dark:text-white ">
-            Fullstack Developer @ Erasmus Internation Network <br />
-            <span className="jetBrains text-sm text-orange-500">
-              (to Dec. 2023)
+            Frontend Developer @ Erasmus & Internationals Network <br />
+            <span className="jetBrains text-sm dark:text-neutral-400">
+              (till Dec. 2023)
             </span>
           </span>
           <br />
