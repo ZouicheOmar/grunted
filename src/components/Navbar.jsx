@@ -212,9 +212,6 @@ const Navbar = () => {
     const element = document.getElementById("projects")
     element.scrollIntoView({behavior: "smooth"})
   }
-  const handleGoTop = () => {
-    window.scrollTo({top: 0, left: 0, behavior: "smooth"})
-  }
 
   useEffect(() => {
     fadeFromTop("nav_title")

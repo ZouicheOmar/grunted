@@ -5,6 +5,8 @@ import {ArrowUp} from "../assets/icons"
 
 import {GithubIcon, MailIcon, LinkedInIcon} from "../assets/icons"
 
+import {TEXT} from "../text"
+
 const HeroSection = () => {
   const handleArrowDown = () => {
     const element = document.getElementById("skills")
@@ -17,29 +19,43 @@ const HeroSection = () => {
   return (
     <>
       <div
-        className="relative w-full h-screen md:grid place-content-center place-items-center rounded p-2"
+        className="relative hidden w-full h-screen md:grid place-content-center place-items-center rounded p-2"
         id="hero"
       >
         <div className="generalFont z-10 w-fit h-fit flex flex-col justify-center rounded p-2">
           <h1 className="font-medium text-7xl">Omar Zouiche</h1>
-          <span className="  text-2xl w-3/4 leading-tight">
-            A Frontend Developer, graduate in Mathematics, interested in App
-            Design and User Experience, Constant learner, currently based in
-            France
-          </span>
+
+          <span className="  text-2xl w-3/4 leading-tight">{TEXT.HERO}</span>
+
           <div className="flex gap-3 font-[500] dark:font-normal">
-            <div className="cursor-pointer  flex items-end gap-1  w-fit p-1 px-2 rounded ">
+            <a
+              href="https://github.com/ZouicheOmar"
+              target="blank"
+              rel="noreferrer"
+              className="cursor-pointer  flex items-end gap-1  w-fit p-1 px-2 rounded "
+            >
               <GithubIcon className="w-[1.8rem] stroke-[1.5px]" />
               <span className="formaDJR text-lg ">Github</span>
-            </div>
-            <div className="cursor-pointer flex items-end gap-1  w-fit p-1 px-2 rounded ">
+            </a>
+
+            <a
+              href="mailto:zouiche.omar@gmail.com?subject = Feedback&body = Message"
+              target="blank"
+              rel="noreferrer"
+              className="cursor-pointer flex items-end gap-1  w-fit p-1 px-2 rounded "
+            >
               <MailIcon className="w-[2rem] stroke-[1.5px]" />
               <span className="formaDJR  text-lg">zouiche.omar@gmail.com</span>
-            </div>
-            <div className="flex items-end gap-1  w-fit p-1 px-2 rounded cursor-pointer ">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/omar-zouiche-aaab27274/"
+              target="blank"
+              rel="noreferrer"
+              className="flex items-end gap-1  w-fit p-1 px-2 rounded cursor-pointer "
+            >
               <LinkedInIcon className="w-[2rem] stroke-[1.5px]" />
               <span className="formaDJR text-lg">LinkedIn</span>
-            </div>
+            </a>
           </div>
           <span
             className="absolute cursor-pointer bottom-[20%] right-[1rem]"
@@ -63,15 +79,12 @@ const HeroSection = () => {
         <div className="z-10 h-fit flex flex-col justify-center rounded ">
           <h1 className="font-semibold ">Omar Zouiche</h1>
 
-          <span className="text-xl leading-tight">
-            A Frontend Developer, graduate in Mathematics, interested in App
-            Design and User Experience, Constant learner, currently based in
-            France{" "}
-          </span>
+          <span className="text-xl leading-tight">{TEXT.HERO}</span>
           <div className="flex flex-wrap gap-x-10 gap-y-2 mt-6 ml2 ">
             <a
               href="https://github.com/ZouicheOmar"
               target="blank"
+              rel="noreferrer"
               className="cursor-pointer flex items-center rounded "
             >
               {" "}
@@ -81,6 +94,7 @@ const HeroSection = () => {
             <a
               href="mailto:zouiche.omar@gmail.com?subject = Feedback&body = Message"
               target="blank"
+              rel="noreferrer"
               className="cursor-pointer flex items-center gap-1  w-fit  rounded "
             >
               <MailIcon className="w-[1.7rem]" />
@@ -89,8 +103,8 @@ const HeroSection = () => {
             <a
               href="https://www.linkedin.com/in/omar-zouiche-aaab27274/"
               target="blank"
+              rel="noreferrer"
               className="flex items-center gap-1 hover:cursor-pointer"
-              // className="flex items-center gap-1 w-fit  rounded cursor-pointer "
             >
               <LinkedInIcon className="w-[1.7rem]" />
               <span className=" ">LinkedIn</span>

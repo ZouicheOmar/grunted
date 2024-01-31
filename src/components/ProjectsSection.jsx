@@ -2,6 +2,9 @@
 import {useEffect} from "react"
 import fadeInView from "../functions/animations/fadeInView"
 import {GithubIcon} from "../assets/icons"
+import {ExternalLinkIcon} from "@radix-ui/react-icons"
+
+import {TEXT} from "../text"
 
 const ProjectsSection = () => {
   useEffect(() => {
@@ -13,20 +16,52 @@ const ProjectsSection = () => {
       id="projects"
     >
       <p className="generalFont font-medium text-5xl leading-tight">Projects</p>
+
       <div className="z-10 generalFont light:text-neutral-900 mt-[0.5rem]  dark:text-white border-b-[1px] border-b-neutral-500 pb-[2rem] ">
-        <span className="text-xl light:text-neutral-900 dark:text-white  font-medium ">
-          Abroad{" "}
-          <span className="jetBrains text-sm flex text-orange-500">
-            (Current)
-            <a href="https://github.com/ZouicheOmar/abroad-vite" target="blank">
-              <GithubIcon className="pl-2 h-[1.2rem] inline stroke-white hover:cursor-pointer" />
-            </a>
+        <a
+          href={TEXT.PROJECTS.MESSBOARD.GH_REPO_LINK}
+          target="_blank"
+          rel="noreferrer"
+          className="group text-xl light:text-neutral-900 hover:text-teal-500 dark:text-white transition-colors duration-200  font-medium "
+        >
+          {TEXT.PROJECTS.MESSBOARD.TITLE}
+          <span className="underline-none jetBrains text-sm flex text-teal-500">
+            (LATEST)
+            <GithubIcon className="pl-2 h-[1.2rem] inline group-hover:stroke-teal-500 transition-colors duration-200  stroke-white hover:cursor-pointer" />
           </span>
-        </span>
+        </a>
+        <div className="w-full flex flex-col xl:flex-row  gap-3 xl:gap-4">
+          <p className="pt-2 xl:max-w-1/4">{TEXT.PROJECTS.MESSBOARD.DESC}</p>
+          <div className="xl:grow xl:max-w-[600px] h-full">
+            <img src={TEXT.PROJECTS.MESSBOARD.IMAGE} className="object-fit" />
+          </div>
+        </div>
+      </div>
+
+      <div className="z-10 generalFont light:text-neutral-900 mt-[0.5rem]  dark:text-white border-b-[1px] border-b-neutral-500 pb-[2rem] ">
+        <a
+          href="https://github.com/ZouicheOmar/abroad-vite"
+          target="_blank"
+          rel="noreferrer"
+          className="hover text-xl light:text-neutral-900 dark:text-white  font-medium "
+        >
+          {TEXT.PROJECTS.ABORAD.TITLE}
+          <GithubIcon className="pl-2 h-[1.2rem] inline stroke-white hover:cursor-pointer" />
+        </a>
         <p className="pt-2">
-          A plateform for International Students in Geneva and Lausanne to
-          connect. Implemeting a user authentification system, events (product)
-          listing, payment system, deployment and maintenance.
+          A fully featured demo website for{" "}
+          <a
+            href="https://www.instagram.com/erasmus_montpellier/"
+            target="_blank"
+            rel="noreferrer"
+            className="items-center group hover:text-indigo-500 transition-colors duration-200"
+          >
+            Erasmus & Internationals Network
+            <ExternalLinkIcon className="group-hover:text-indigo-500 transition-colors duration-200 inline-block ml-[1px] mb-[1px]" />
+          </a>
+          , an association for international Students in Geneva and Lausanne to
+          connect. Recent features were a user authentification system, events
+          (product) listing, payment system, deployment and maintenance.
         </p>
         <p className="pt-1 leading-tight text-neutral-500 dark:text-slate-300">
           {" "}
