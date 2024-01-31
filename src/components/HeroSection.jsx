@@ -9,7 +9,7 @@ import {TEXT} from "../text"
 
 const HeroSection = () => {
   const handleArrowDown = () => {
-    const element = document.getElementById("skills")
+    const element = document.getElementById("projects")
     element.scrollIntoView({behavior: "smooth", inline: "start"})
   }
   useEffect(() => {
