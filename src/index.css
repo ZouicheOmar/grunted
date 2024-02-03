@@ -14,16 +14,21 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  /* line-height: 1.5; */
-  /* font-weight: 400; */
+  font-family: "SF Pro Display", Helvetica, Arial, sans-serif;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  /* color: rgba(14, 12, 12, 0.87); */
-  /* background-color: #f9f4af; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -78,16 +83,11 @@ button:focus-visible {
 .title {
   font-family: "Forma DJR Banner", sans-serif;
   font-weight: 700;
-  /* font-size: 3rem; */
-  /* max-width: fit-content; */
 }
 
 #nav_title {
   position: absolute;
-  /* font-family: 'Forma DJR Banner', sans-serif; */
-  /* font-family: 'Fragment Mono', monospace; */
-  font-family: "Inconsolata", monospace;
-  /* font-family: 'VT323', monospace; */
+  font-family: "Forma DJR Banner", sans-serif;
   font-weight: 600;
   font-size: 2rem;
   max-width: fit-content;

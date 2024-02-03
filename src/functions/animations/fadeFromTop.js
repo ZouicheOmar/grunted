@@ -1,13 +1,13 @@
 /** @format */
 
-import {animate} from 'motion'
+import {animate} from "motion"
 
-async function fadeFromTop(selector) {
+function fadeFromTop(selector) {
   const element = document.getElementById(selector)
-  await animate(
+  animate(
     element,
     {
-      color: ['red', 'yellow'],
+      color: ["white", "yellow"],
       y: [-15, 0],
       x: [0, 15],
       opacity: [0, 1],

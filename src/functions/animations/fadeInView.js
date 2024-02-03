@@ -1,11 +1,9 @@
 /** @format */
 
-import {animate, inView} from 'motion'
+import {animate, inView} from "motion"
 
-async function fadeInView(selector) {
-  await inView(selector, async (info) => {
-    await animate(info.target, {opacity: [0, 1]}, {duration: 1.5})
+export default function fadeInView(selector) {
+  inView(selector, (info) => {
+    animate(info.target, {opacity: [0, 1]}, {duration: 1.5})
   })
 }
-
-export default fadeInView

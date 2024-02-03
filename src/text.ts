@@ -1,11 +1,15 @@
 /** @format */
 
 export const TEXT = {
-  HERO: `
-    A Frontend Developer, graduate in Mathematics, interested in App
-    Design and User Experience, Constant learner, currently based in
-    France${" "}
-    `,
+  // HERO: `
+  //   A Frontend Developer, graduate in Mathematics, interested in App
+  //   Design and User Experience, Constant learner, currently based in
+  //   France${" "}
+  //   `,
+  HERO: `Passionate self-taught web developer and math graduate, blending analytical thinking with creative problem-solving to craft efficient digital experiences.`,
+  // HERO: `
+  // hero texte à refaire
+  // `,
   SKILLS: {
     FRONTEND: ["React", "Next.js", "Typesctript", "Redux"],
     BACKEND: ["Node.js", "Express.js", "Python", "PostgreSQL"],
@@ -36,7 +40,6 @@ export const TEXT = {
     },
     STUDIES: {
       DESC: "",
-      STACK: "",
     },
   },
   EXPERIENCES: {
@@ -77,4 +80,12 @@ export const TEXT = {
   },
   CONTACT:
     "Currently seeking for opportunities to contribute with my skills to build and take part in interesting projects.",
+}
+
+export const sections = {
+  home: "hero",
+  projects: "projects",
+  skills: "skills",
+  experiences: "experiences",
+  contact: "contact",
 }

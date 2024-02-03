@@ -6,6 +6,7 @@ import pdf from "../assets/CV-ZOUICHE.pdf"
 
 import {TEXT} from "../text"
 import {Title} from "./Title"
+import {GitHubLogoIcon, LinkedInLogoIcon} from "@radix-ui/react-icons"
 
 const ContactSection = () => {
   useEffect(() => {
@@ -14,22 +15,20 @@ const ContactSection = () => {
   return (
     <>
       <div
-        className="generalFont w-full h-screen rounded md:px-[5%] pt-[5rem] md:pt-[2rem] flex flex-col gap-2 "
+        className="w-full h-screen md:px-[5%] pt-[5rem] md:pt-[2rem] flex flex-col gap-2 "
         id="contact"
       >
         <Title value="Subjet & Contact" />
-        <div className="w-full pt-[2rem] flex flex-col items-center gap-16 text-xl">
-          <p>{TEXT.CONTACT}</p>
-          <div className=" flex flex-col items-center w-full gap-3">
+        <div className="w-full pt-[2rem] flex flex-col items-center gap-16 text-lg">
+          <p className="w-full text-start">{TEXT.CONTACT}</p>
+          <div className="flex flex-col items-center w-full gap-3">
             <a
               className="flex items-center gap-2  w-full"
               href="https://github.com/ZouicheOmar"
               target="blank"
               rel="noreferrer"
             >
-              <span>
-                <GithubIcon className="h-[1.7rem] " />
-              </span>
+              <GitHubLogoIcon className="size-[1.5rem]" />
               <span>Github Profile</span>
             </a>
             <a
@@ -38,9 +37,7 @@ const ContactSection = () => {
               target="blank"
               rel="noreferrer"
             >
-              <span>
-                <LinkedInIcon className="pt-[1px] h-[1.7rem]" />
-              </span>
+              <LinkedInLogoIcon className="size-[1.5rem]" />
               <span>Find me on LinkedIn</span>
             </a>
             <a
@@ -49,9 +46,7 @@ const ContactSection = () => {
               target="blank"
               rel="noreferrer"
             >
-              <span>
-                <MailIcon className="pt-1 h-[1.7rem]" />
-              </span>
+              <MailIcon className="pt-1 h-[1.7rem] dark:fill-white" />
               zouiche.omar@gmail.com
             </a>
             <a
@@ -60,9 +55,7 @@ const ContactSection = () => {
               rel="noreferrer"
               className="flex items-center gap-2  w-full"
             >
-              <span>
-                <ExtLink className="h-[1.7rem]" />
-              </span>
+              <ExtLink className="h-[1.7rem]" />
               Resume
             </a>
           </div>

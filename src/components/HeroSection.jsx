@@ -1,128 +1,81 @@
 /** @format */
 import {useEffect} from "react"
+import {TEXT, sections} from "../text"
+
+import navigatTo from "../utils/navigateTo"
 import fadeInView from "../functions/animations/fadeInView"
-import {ArrowUp} from "../assets/icons"
 
-import {GithubIcon, MailIcon, LinkedInIcon} from "../assets/icons"
+import {MailIcon, ArrowUp} from "../assets/icons"
+import {GitHubLogoIcon, LinkedInLogoIcon} from "@radix-ui/react-icons"
 
-import {TEXT} from "../text"
+const BG = () => (
+  <div className="absolute w-full h-5/6 md:h-full  top-0 left-0 z-0">
+    <img
+      src="./twareg.png"
+      className="object-cover object-right-bottom h-full opacity-10"
+    />
+  </div>
+)
+
+const ScrollToSectionArrow = () => (
+  <span
+    className="absolute cursor-pointer bottom-[5%] right-3 md:right-[1rem]"
+    onClick={() => navigatTo(sections.projects)}
+  >
+    <ArrowUp className="rotate-180 scale-150" />
+  </span>
+)
 
 const HeroSection = () => {
-  const handleArrowDown = () => {
-    const element = document.getElementById("projects")
-    element.scrollIntoView({behavior: "smooth", inline: "start"})
-  }
   useEffect(() => {
     fadeInView("#hero")
-    fadeInView("#mobile_hero")
   })
   return (
     <>
       <div
-        className="relative hidden w-full h-screen md:grid place-content-center place-items-center rounded p-2"
         id="hero"
+        className="relative w-full h-[90vh] md:h-screen  mt-[4rem] md:mt-0  md:p-0 flex flex-col justify-center md:grid place-content-center place-items-center "
       >
-        <div className="generalFont z-10 w-fit h-fit flex flex-col justify-center rounded p-2">
-          <h1 className="font-medium text-7xl">Omar Zouiche</h1>
-
-          <span className="  text-2xl w-3/4 leading-tight">{TEXT.HERO}</span>
-
-          <div className="flex gap-3 font-[500] dark:font-normal">
-            <a
-              href="https://github.com/ZouicheOmar"
-              target="blank"
-              rel="noreferrer"
-              className="cursor-pointer  flex items-end gap-1  w-fit p-1 px-2 rounded "
-            >
-              <GithubIcon className="w-[1.8rem] stroke-[1.5px]" />
-              <span className="formaDJR text-lg ">Github</span>
-            </a>
-
-            <a
-              href="mailto:zouiche.omar@gmail.com?subject = Feedback&body = Message"
-              target="blank"
-              rel="noreferrer"
-              className="cursor-pointer flex items-end gap-1  w-fit p-1 px-2 rounded "
-            >
-              <MailIcon className="w-[2rem] stroke-[1.5px]" />
-              <span className="formaDJR  text-lg">zouiche.omar@gmail.com</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/omar-zouiche-aaab27274/"
-              target="blank"
-              rel="noreferrer"
-              className="flex items-end gap-1  w-fit p-1 px-2 rounded cursor-pointer "
-            >
-              <LinkedInIcon className="w-[2rem] stroke-[1.5px]" />
-              <span className="formaDJR text-lg">LinkedIn</span>
-            </a>
-          </div>
-          <span
-            className="absolute cursor-pointer bottom-[20%] right-[1rem]"
-            onClick={handleArrowDown}
-          >
-            <ArrowUp className="rotate-180 scale-150" />
+        <div className="w-full flex flex-col justify-center  grow max-h-[60%] md:max-h-full gap-3">
+          <h1 className="font-medium formaDJR w-full leading-none md:text-7xl">
+            Omar Zouiche
+          </h1>
+          <span className="text-lg md:text-2xl px-1 text-balance md:w-3/4 leading-tight">
+            {TEXT.HERO}
           </span>
         </div>
-        <div className="absolute w-full h-full mix-blend- border-white top-0 left-0 z-0">
-          <img
-            src="./twareg.png"
-            className="object-cover object-right-bottom h-full opacity-10"
-          />
-        </div>
-      </div>
-
-      <div
-        id="mobile_hero"
-        className="relative md:h-[80vh] h-screen generalFont md:hidden flex flex-col justify-center basierFont mt-[5rem] w-full"
-      >
-        <div className="z-10 h-fit flex flex-col justify-center rounded ">
-          <h1 className="font-semibold ">Omar Zouiche</h1>
-
-          <span className="text-xl leading-tight">{TEXT.HERO}</span>
-          <div className="flex flex-wrap gap-x-10 gap-y-2 mt-6 ml2 ">
-            <a
-              href="https://github.com/ZouicheOmar"
-              target="blank"
-              rel="noreferrer"
-              className="cursor-pointer flex items-center rounded "
-            >
-              {" "}
-              <GithubIcon className="w-[1.7rem]" />
-              <span className=" ">Github</span>
-            </a>
-            <a
-              href="mailto:zouiche.omar@gmail.com?subject = Feedback&body = Message"
-              target="blank"
-              rel="noreferrer"
-              className="cursor-pointer flex items-center gap-1  w-fit  rounded "
-            >
-              <MailIcon className="w-[1.7rem]" />
-              <span className="">zouiche.omar@gmail.com</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/omar-zouiche-aaab27274/"
-              target="blank"
-              rel="noreferrer"
-              className="flex items-center gap-1 hover:cursor-pointer"
-            >
-              <LinkedInIcon className="w-[1.7rem]" />
-              <span className=" ">LinkedIn</span>
-            </a>
-          </div>
-          <span
-            className="absolute cursor-pointer bottom-[20%] right-[1rem]"
-            onClick={handleArrowDown}
+        <div className="flex flex-col w-full md:flex-row gap-2 text-xl md:hidden ">
+          <a
+            href="https://github.com/ZouicheOmar"
+            target="blank"
+            rel="noreferrer"
+            className="cursor-pointer flex items-center  gap-1 w-fit md:p-1 md:px-2 "
           >
-            <ArrowUp className="rotate-180 scale-150" />
-          </span>
+            <GitHubLogoIcon className="size-full" />
+            Github
+          </a>
+
+          <a
+            href="mailto:zouiche.omar@gmail.com?subject = Feedback&body = Message"
+            target="blank"
+            rel="noreferrer"
+            className="cursor-pointer flex items-center  gap-1  w-fit md:p-1 md:px-2 "
+          >
+            <MailIcon className="w-[1.7rem] dark:fill-white " />
+            zouiche.omar@gmail.com
+          </a>
+          <a
+            href="https://www.linkedin.com/in/omar-zouiche-aaab27274/"
+            target="blank"
+            rel="noreferrer"
+            className="flex items-center gap-2  w-fit md:p-1 md:px-2 cursor-pointer "
+          >
+            <LinkedInLogoIcon className="size-full" />
+            LinkedIn
+          </a>
         </div>
-        <div className="absolute w-full h-5/6 mixblend-luminosity top-0 left-0 z-0">
-          <img
-            src="./twareg.png"
-            className="object-cover opacity-30 object-right-bottom h-full dark:opacity-10 "
-          />
-        </div>
+        <ScrollToSectionArrow />
+        {/* <BG /> */}
       </div>
     </>
   )

@@ -17,7 +17,7 @@ import {
 import {TEXT} from "../text"
 
 const FrontEnd = () => (
-  <div className="relative overflow-hidden flex-grow lg:w-1/4 md:p-4 px-3 py-2 w-[47%] sm:w-5/12 flex flex-col items-start gap-4 border-r-[1px] rounded-xl border-neutral-700 border-[1px] bg-gradient-to-t from-green-700 to-[#242424]   ">
+  <div className="relative overflow-hidden flex-grow lg:w-1/4 md:p-4 px-3 py-2 w-[47%] sm:w-5/12 flex flex-col items-start gap-4 border-r-[1px] rounded-xl border-slate-900 border-[1px] bg-gradient-to-t from-green-700 to-[#242424]   ">
     <span className="z-10 text-xl lg:text-2xl">Frontend</span>
     <div className="z-10 flex flex-col gap-2 pb-5 pl-[5%] md:text-base w-full  justify-start items-start leading-tight">
       {TEXT.SKILLS.FRONTEND.map((item, index) => (
@@ -32,7 +32,7 @@ const FrontEnd = () => (
 )
 
 const Backend = () => (
-  <div className="relative overflow-hidden flex-grow lg:w-1/4 md:p-4 px-3 py-2 w-[47%] sm:w-5/12 flex flex-col items-start gap-4 border-r-[1px] rounded-xl border-neutral-700 border-[1px]  bg-gradient-to-t from-indigo-800 to-[#242424]   ">
+  <div className="relative overflow-hidden flex-grow lg:w-1/4 md:p-4 px-3 py-2 w-[47%] sm:w-5/12 flex flex-col items-start gap-4 border-r-[1px] rounded-xl border-slate-900 border-[1px]  bg-gradient-to-t from-indigo-800 to-[#242424]   ">
     <span className="z-10 text-xl lg:text-2xl">Backend</span>
     <div className="z-10 flex flex-col gap-2 pb-5 pl-[5%] md:text-base w-full  justify-start items-start leading-tight">
       {TEXT.SKILLS.BACKEND.map((item, index) => (
@@ -47,7 +47,7 @@ const Backend = () => (
 )
 
 const Design = () => (
-  <div className="relative overflow-hidden flex-grow lg:w-1/4 md:p-4 px-3 py-2 w-[47%] sm:w-5/12 flex flex-col items-start gap-4 border-r-[1px] rounded-xl border-neutral-700 border-[1px]  bg-gradient-to-t from-[#8641e5] to-[#242424]   ">
+  <div className="relative overflow-hidden flex-grow lg:w-1/4 md:p-4 px-3 py-2 w-[47%] sm:w-5/12 flex flex-col items-start gap-4 border-r-[1px] rounded-xl border-slate-900 border-[1px]  bg-gradient-to-t from-[#8641e5] to-[#242424]   ">
     <span className="z-10 font-medium text-xl lg:text-2xl">Design</span>
     <div className="z-10 flex flex-col gap-2 pb-5 pl-[5%] md:text-base w-full  justify-start items-start leading-tight">
       {TEXT.SKILLS.DESIGN.map((item, index) => (
@@ -62,7 +62,7 @@ const Design = () => (
 )
 
 const Tools = () => (
-  <div className="relative overflow-hidden flex-grow lg:w-1/4 md:p-4 px-3 py-2 w-[47%] sm:w-5/12 flex flex-col items-start gap-4 border-r-[1px] rounded-xl border-neutral-700 border-[1px]  bg-gradient-to-t from-red-950 to-[#242424]   ">
+  <div className="relative overflow-hidden flex-grow lg:w-1/4 md:p-4 px-3 py-2 w-[47%] sm:w-5/12 flex flex-col items-start gap-4 border-r-[1px] rounded-xl border-slate-900 border-[1px]  bg-gradient-to-t from-red-950 to-[#242424]   ">
     <span className="z-10 font-medium text-xl lg:text-2xl">Tools & Others</span>
     <div className="z-10 flex flex-col gap-2 pb-5 pl-[5%] md:pl-[2%] md:text-base w-full  justify-start items-start leading-tight">
       {TEXT.SKILLS.OTHERS.map((item, index) => (
@@ -77,7 +77,7 @@ const Tools = () => (
 )
 
 const Methods = () => (
-  <div className="relative overflow-hidden flex-grow  md:p-4 px-3 py-2 w-[96%] sm:w-[85%] flex flex-col items-start gap-4 border-r-[1px] rounded-xl border-neutral-700 border-[1px]  bg-gradient-to-t from-[#f15053] to-[#242424]   ">
+  <div className="relative overflow-hidden flex-grow  md:p-4 px-3 py-2 w-[96%] sm:w-[85%] flex flex-col items-start gap-4 border-r-[1px] rounded-xl border-slate-900 border-[1px]  bg-gradient-to-t from-[#f15053] to-[#242424]   ">
     <span className="font-medium text-xl md:text-2xl">
       Principles & Methods
     </span>
@@ -88,11 +88,11 @@ const Methods = () => (
     </div>
     <ThinkingIcon
       src={toolsIcon}
-      className="bottom-[45%] right-[0%]  scale-[600%] absolute stroke-1 stroke-stone-950 opacity-40"
+      className="bottom-[45%] right-[0%]  scale-[600%] absolute stroke-1 stroke-stone-950 opacity-40 "
     />
     <CogIcon
       src={toolsIcon}
-      className="bottom-[10%] right-[20%] scale-[600%] absolute stroke-1 stroke-stone-950 opacity-40"
+      className="bottom-[10%] right-[20%] scale-[600%] absolute stroke-1 stroke-stone-950 opacity-40 "
     />
   </div>
 )

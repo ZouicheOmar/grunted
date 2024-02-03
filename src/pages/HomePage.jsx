@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div
       id="homepage_body"
-      className="w-full px-[1rem] md:w-3/4 md:p-[3rem] min-h-screen flex flex-col gap-6 justify-start items-center"
+      className="w-full px-[1rem] md:w-3/4 overflow-scroll flex flex-col gap-6 "
     >
       <HeroSection />
       <ProjectsSection />

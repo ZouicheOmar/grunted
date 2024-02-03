@@ -17,6 +17,7 @@ const ExperiencesSection = () => {
       <Title value="Experiences" />
       <div className="light:text-neutral-900 dark:text-white mt-[0.5rem] border-b-[1px] border-b-neutral-500 pb-6 ">
         <div>
+          <p className=" font-medium text-3xl mb-2">Work</p>
           <span className="text-xl leading-none light:text-neutral-900 dark:text-white ">
             Frontend Developer @ Erasmus & Internationals Network <br />
             <span className="jetBrains text-sm dark:text-neutral-400">

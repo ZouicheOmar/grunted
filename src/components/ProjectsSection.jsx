@@ -11,7 +11,7 @@ import {ExternalLinkIcon} from "@radix-ui/react-icons"
 import {TEXT} from "../text"
 
 const SectionWrapper = ({children}) => (
-  <div className="z-10 generalFont light:text-neutral-900 mt-[0.5rem]  dark:text-white p-2 bg-neutral-900/50 rounded-[6px]  ">
+  <div className="z-10 light:text-neutral-900 mt-[0.5rem]   p-2 bg-neutral-900/50 rounded-md hover:scale-[1.03] transition-all duration-100 ">
     {children}
   </div>
 )
@@ -42,7 +42,10 @@ const MessBoardProject = () => (
     <div className="w-full flex flex-col xl:flex-row  gap-3 xl:gap-4">
       <p className="pt-2 xl:max-w-1/4">{TEXT.PROJECTS.MESSBOARD.DESC}</p>
       <div className="xl:grow xl:max-w-[600px] h-full">
-        <img src={TEXT.PROJECTS.MESSBOARD.IMAGE} className="object-fit" />
+        <img
+          src={TEXT.PROJECTS.MESSBOARD.IMAGE}
+          className="object-fit rounded-md"
+        />
       </div>
     </div>
   </SectionWrapper>
@@ -88,34 +91,11 @@ const StudiesProject = () => (
       Data optimisation and Mathematical Models
     </span>
     <br />
-    <a
-      href="https://github.com/ZouicheOmar/C-and-Freefem-files-Masters-1-MANU-"
-      target="blank"
-      className="flex gap-2 w-fit items-center cursor-pointer"
-    >
-      <GithubIcon className="h-[1.2rem]" />
-      <span className="hover:underline hover:underline-offset-2">
-        Mathematical Models
-      </span>
-    </a>
-    <a
-      href="https://zouicheomar.github.io/project21808112.github.io/"
-      target="blank"
-      className="flex gap-2 items-center cursor-pointer w-fit"
-    >
-      <GithubIcon className="h-[1.2rem]" />
-      <span className="hover:underline hover:underline-offset-2">
-        Data Optimization
-      </span>
-    </a>
+
     <p className="pt-2">
       A set of projects and studies done during Mathematics study involving data
       analysis & optimization, mathematical models using Python, where I deeply
-      dived in programming.
-    </p>
-    <p className="pt-1 leading-tight text-neutral-500 dark:text-slate-300">
-      {" "}
-      Stack : HTML, CSS, Javascript, Python, FreeFEM, C++
+      dived in programming, mainly in Python, C++ & Matlab.
     </p>
   </SectionWrapper>
 )
@@ -143,15 +123,15 @@ const ProjectsSection = () => {
   })
   return (
     <div
-      className="relative generalFont w-full rounded  md:px-[5%] pt-[5rem] md:pt-[2rem]  flex flex-col gap-2 h-fit cursor-default"
+      className="relative w-full rounded md:px-[5%] pt-[5rem] md:pt-[2rem]  flex flex-col gap-2 h-fit cursor-default"
       id="projects"
     >
       <Title value="Projects" />
 
       <MessBoardProject />
       <AbroadProject />
-      <StudiesProject />
-      <OthersProjects />
+      {/* <StudiesProject /> */}
+      {/* <OthersProjects /> */}
 
       <SectionBg />
     </div>
