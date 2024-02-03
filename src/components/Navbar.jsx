@@ -57,7 +57,7 @@ const SmNavbar = () => {
         <div
           className={`${
             open ? "-left-[100vw]" : "left-[100vw]"
-          } absolute overflow-hidden w-[110vw] h-[100vh] top-[-2vh]  backdrop-blur-lg flex justify-end transition-all duration-300`}
+          } absolute overflow-hidden w-[110vw] h-[100vh] top-[-3vh] backdrop-blur-lg flex justify-end transition-all duration-300`}
         >
           <div className="w-[55vw] h-full flex flex-col justify-between pb-[3rem] bg-slate-800 ">
             <span
