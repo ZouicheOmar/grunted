@@ -6,7 +6,7 @@ import fadeInView from "../functions/animations/fadeInView"
 import {Title} from "./Title"
 
 import {GithubIcon} from "../assets/icons"
-import {ExternalLinkIcon} from "@radix-ui/react-icons"
+import {ExternalLinkIcon, OpenInNewWindowIcon} from "@radix-ui/react-icons"
 
 import {TEXT} from "../text"
 
@@ -28,15 +28,16 @@ const SectionBg = () => (
 const MessBoardProject = () => (
   <SectionWrapper>
     <a
-      href={TEXT.PROJECTS.MESSBOARD.GH_REPO_LINK}
+      href={TEXT.PROJECTS.MESSBOARD.URL}
       target="_blank"
       rel="noreferrer"
       className="group text-xl light:text-neutral-900 hover:text-teal-500 dark:text-white transition-colors duration-200  font-medium "
     >
       {TEXT.PROJECTS.MESSBOARD.TITLE}
-      <span className="underline-none jetBrains text-sm flex text-teal-500">
+      <OpenInNewWindowIcon className="pl-2 w-fit inline  hover:cursor-pointer" />
+      <span className="underline-none jetBrains text-xs flex text-teal-500">
         (LATEST)
-        <GithubIcon className="pl-2 h-[1.2rem] inline group-hover:stroke-teal-500 transition-colors duration-200  stroke-white hover:cursor-pointer" />
+        {/* <GithubIcon className="pl-2 h-[1.2rem] inline group-hover:stroke-teal-500 transition-colors duration-200  stroke-white hover:cursor-pointer" /> */}
       </span>
     </a>
     <div className="w-full flex flex-col xl:flex-row  gap-3 xl:gap-4">

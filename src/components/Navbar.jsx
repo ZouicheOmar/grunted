@@ -34,6 +34,12 @@ const SmNavbar = () => {
     window.scrollTo({top: 0, left: 0, behavior: "smooth"})
   }
 
+  const handleBodyPointerDown = () => {
+    setTimeout(() => {
+      setOpen(false)
+    }, 300)
+  }
+
   return (
     <div className="fixed z-20 md:hidden ml-0 mr-0 top-0 left-0 min-w-full  h-[4rem] py-4 px-2 bg-slate-800 flex items-center justify-between">
       <span
@@ -68,7 +74,8 @@ const SmNavbar = () => {
             >
               <Cross1Icon className="scale-150" />
             </span>
-            <Body onPointerDown={() => setOpen(!open)} />
+            {/* <Body onPointerDown={handleBodyPointerDown} /> */}
+            <Body />
 
             <span
               onPointerDown={goTop}
@@ -84,7 +91,10 @@ const SmNavbar = () => {
 }
 
 const Contact = () => (
-  <div className="nav-item flex flex-col flex-wrap gap-x-2 toanim ">
+  <div
+    id="contact-in-navbar"
+    className="hidden md:flex nav-item z-10  flex-col flex-wrap gap-x-2 toanim "
+  >
     <a
       href="https://github.com/ZouicheOmar"
       target="blank"
@@ -92,7 +102,7 @@ const Contact = () => (
       className="flex gap-2 pl-[2rem] hover:bg-slate-800 transition-colors duration-200 items-center hover:cursor-pointer"
     >
       <GitHubLogoIcon />
-      <span className=" hover:cursor-pointer  ">Github</span>
+      <span className="hover:cursor-pointer">Github</span>
     </a>
     <a
       href="mailto:zouiche.omar@gmail.com?subject = Feedback&body = Message"
@@ -101,7 +111,7 @@ const Contact = () => (
       className="flex gap-2 pl-[2rem] hover:bg-slate-800 transition-colors duration-200 items-center hover:cursor-pointer"
     >
       <MailIcon className="h-[1rem] w-[1rem] dark:fill-white" />
-      <span className=" hover:cursor-pointer  ">Mail</span>
+      <span className="hover:cursor-pointer">Mail</span>
     </a>
     <a
       href="https://www.linkedin.com/in/omar-zouiche-aaab27274/"

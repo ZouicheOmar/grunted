@@ -27,8 +27,9 @@ export const TEXT = {
     MESSBOARD: {
       TITLE: "Mess Board",
       MOSTRECENT: true,
-      DESC: "A local browser app, built with React, TailwindCSS, RadixUI & shadcn/ui , backend runs on an express server. Requires Node & npm",
-      GH_REPO_LINK: "https://github.com/ZouicheOmar/messBoard",
+      // DESC: "A local browser app, built with React, TailwindCSS, RadixUI & shadcn/ui , backend runs on an express server. Requires Node & npm",
+      DESC: 'A tool to save simple data on a board. It supports text, markdown, code, images, it also permits to save web urls. It enable to have a place where one can "ditch" data without thinking about a tidy "notes" folder structure',
+      URL: "https://messboard.vercel.app/",
       IMAGE: "messBoardScreenshot.png",
     },
     ABORAD: {
